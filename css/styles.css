@@ -1,0 +1,583 @@
+/*______________________________________________________
+_____________________ INDEX___________________________
+______________________________________________________
+
+*/
+body {
+	margin-top: 130px; /*Note à changer en fonction du header*/
+}
+
+/*CCS du bandeau du Besoin d'appel*/
+#bandeau_appel p {
+	text-align: right;
+	font-size: 0.8em;
+	margin-top: 1rem;
+	margin-bottom: 0rem;
+}
+
+header {
+	width: 100%;
+	background-color: white;
+}
+
+.marge_aeration {
+	margin-bottom: 30px;
+}
+
+/*Survol des éléments du menu*/
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #fd1015;
+}
+
+/*CSS du sous-menu :*/
+.dropdown-item {
+	padding: 0.25rem 0.5rem;
+}
+
+.dropdown-item:hover {
+	color: #fd1015;
+	background-color: white;
+}
+
+/*Changement de couleur du bouton*/
+.btn-outline-danger:hover {
+	color: white;
+	background-color: #fd1015;
+}
+
+/*Intégration du parallax*/
+/*.parallax {
+	width: 100%;
+	height: 400px;
+	background-image: url(salon_parallax.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	background-attachment: fixed;
+}*/
+
+/*Création des div commande Fioul et Chaudière*/
+.commande {
+	width: 500px;
+	height: 300px;
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,0.5);
+	padding-top: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h2{
+	background-color: #fd1015;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+div .phase2 {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+label {
+	margin-bottom: 0rem;
+}
+
+.btn-danger {
+	background-color: #fd1015;
+}
+
+
+/*CSS des étapes d'achats et de la réassurance*/
+.etape_achat {
+	height: 95px;
+	display: flex;
+	flex-direction: row;
+	color: black;
+	font-size: 0.8em;
+	background-color: #F5F5F5;
+	border-radius: 10px; 
+	margin:10px 0px;
+	overflow: hidden;
+}
+
+.etape_achat i {
+	font-size: 3em;
+	color: red;
+}
+
+.etape_achat h3 {
+	font-size: 1.5em;
+}
+
+.etape_achat p {
+	margin-bottom: 0px;
+	margin-right: 5px;
+}
+
+.test1, .test2 {
+	margin: auto;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+/*CSS pour le défilement de la barre d'achat*/
+
+.defilement2 {                               
+  	display: flex;
+  	padding-left: 100%;                                     
+  	animation: 30s linear 0s normal none infinite defilement;
+/*	animation-name: defilement;
+	animation-duration: 30s;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-fill-mode: none;*/
+}
+
+@keyframes defilement {
+  	0% {
+  		transform: translate(0);
+  	}
+	100% {
+		transform: translate(-2000px);
+	}
+}
+
+
+/*CSS pour la partie entreprise*/
+
+.titre_societe h3{
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.etape_societe, .etape_societe2 {
+	height: 125px;
+	margin: auto;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.etape_societe img{
+	float: right;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+
+.etape_societe2 img{
+	float: left;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+.etape_societe p, .etape_societe2 p{
+	text-align: justify;
+	font-size: 0.8rem;
+}
+
+.etape_societe h4, .etape_societe2 h4{
+	font-size: 1.2rem;
+}
+
+
+/*CSS pour les avis clients*/
+.avis_produit h3{
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.carousel-indicators li {
+	background-color: black; 
+}
+
+.carousel-caption {
+	background-color: rgba(254, 248, 245, 0.5);
+}
+
+.carousel-caption h4 {
+	font-size: 1.2rem;
+	text-align: left;
+	margin-bottom: 0px;
+}
+
+.carousel-caption h4, .carousel-caption p, .carousel-caption em, .carousel-caption i{
+	color: black;
+}
+.carousel-caption .jaune{
+	color: orange;
+	text-align: right;
+}
+
+.carousel-caption i, .carousel-caption p {
+	font-size: 0.8em;
+}
+
+.carousel-caption p {
+	margin-bottom: 0px;
+}
+
+.carousel-caption em {
+	font-style: italic;
+}
+
+.position_p_left {
+	text-align: left;
+	font-weight: bold;
+}
+
+.position_p_right {
+	text-align: right;
+}
+
+.encadre_avis {
+	background-color: white;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px black;
+}
+
+.carousel-control-next-icon i, .carousel-control-prev-icon i {
+	font-size: 1.5rem;
+	color: rgb(146, 144, 144);
+}
+
+.carousel-item img {
+	margin: auto;
+}
+
+/*CSS pour la forme de les parties Actualité et Produits service*/
+div .phase3 {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.couleur_fond {
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+	margin: 10px 0px;
+	padding-bottom: 5px; 
+}
+
+/*CSS pour la partie Actualité*/
+
+.titre_actualite h3{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.etape_actualite {
+	height: 125px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.etape_actualite a{
+	text-decoration: none;
+	color: black;
+}
+
+.etape_actualite p {
+ 	font-size: 0.8rem;
+}
+
+.etape_actualite a:hover{
+	color: #fd1015;
+}
+
+.etape_actualite h4{
+	font-size: 1.2rem;
+}
+
+.etape_actualite img {
+	border-radius: 5px;
+	float: left;
+	margin-right: 10px;
+}
+
+/*CSS pour la partie Produits et Services*/
+
+.titre_produit_service h3{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.etape_produit_service p{
+	font-size: 0.8rem;
+	color: white;
+	background-color: rgba(253, 16,21,0.7);
+	border-radius: 10px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.etape_produit_service img{
+	border-radius: 5px;
+}
+
+
+/*CSS pour le FOOTER*/
+footer a {
+	color:#000;
+}
+
+.logo p {
+	font-weight: bold;
+	margin: auto;
+}
+
+.logo img {
+	float: left;
+}
+
+#footer-font {
+	font-size: .8rem;
+}
+
+.btn-rouge {
+  color: #fd1015;
+  background-color:#fff ;
+  border-color: #fd1015;
+  border-radius: 0.25rem;
+}
+
+.btn-rouge:hover {
+	background-color:#fd1015;
+	color:#fff;
+	border-color: #fd1015;
+}
+
+/*CSS pour les Modals Bootstrap*/
+.modal-header {
+	background-color: #fd1015;
+}
+
+.btn-secondary, .btn-primary {
+	background-color: #fd1015;
+	color: white;
+	border: none;
+}
+
+span.lecture_cgu {
+	font-size: 0.8rem;
+}
+
+
+/*CSS pour l'accordeon du footer en Responsive*/
+.accordion {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid lightgrey;
+  transition: 0.4s;
+  margin-top: 10px;
+}
+
+.accordion button {
+	background-color: white;
+    border: none;
+}
+
+.panel {
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+
+/*______________________________________________________
+_____________________ACHAT FIOUL________________________
+______________________________________________________
+
+*/
+
+/*CSS de l'introduciton de page*/
+
+.titre_page {
+	background-color: rgba(253,16,21,0.9);
+	color: white;
+}
+
+.mini_footer {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.ligne {
+	height: 1px;
+	background-color: black;
+	margin-top: 15px;
+}
+
+
+/*CSS des parties DEVIS, INFORMATIONS et COMMANDE*/
+
+.formulaire {
+	margin: 5px 0px;
+}
+
+/*CSS pour l'évolution des prix du fioul*/
+
+#image_evolution_prix {
+	text-align: center;
+}
+
+.ligne2 {
+	height: 10px;
+	background-color: #f97e02;
+	margin-top: 15px;
+}
+
+.ligne3 {
+	height: 10px;
+	background-color: #0060a8;
+	margin-top: 15px;
+}
+
+/*CSS pour les avis des clients*/
+.contour_commentaire{
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px black;
+	margin-bottom: 10px;
+	padding-left: 5px;
+}
+
+.jaune {
+	color: orange;
+}
+
+
+
+/*______________________________________________________
+_________________FOIRE AUX QUESTIONS___________________
+_______________________________________________________
+
+*/
+
+.titre_faq, li .accordion{
+	list-style: none;
+	background-color: #F5F5F5;
+}
+
+.titre_faq:hover, li .accordion:hover {
+	background-color: #fd1015;
+	color: white;
+}
+
+div .panel p {
+	text-align: justify;
+	padding: 5px;
+	color: black;
+}
+
+.suppression_padding {
+	padding: 0px;
+}
+
+.encadre_box{
+	box-shadow: 5px 5px 5px black;
+}
+
+.retour_haut_page {
+	width: 230px;
+	height: 50px;
+	background-color: #fd1015;
+	color: white;
+	border: none;
+	border-radius: 10px;
+}
+#centrer {
+	width: 100%
+	height: 100px;
+}
+
+
+/*______________________________________________________
+____________CONDITIONS GENERALES DE VENTE_______________
+_______________________________________________________
+
+*/
+
+.contenu_cgv h3{
+	font-size: 1.5rem;
+}
+
+.contenu_cgv p{
+	text-align: justify;
+}
+
+
+
+
+/*______________________________________________________
+____________MENTIONS LEGALES_______________
+_______________________________________________________
+
+*/
+
+.contenu_mentions_legales h3{
+	font-size: 1.5rem;
+}
+
+.contenu_mentions_legales h4{
+	font-size: 1.2rem;
+}
+
+.contenu_mentions_legales p{
+	text-align: justify;
+}
+
+
+
+
+/*______________________________________________________
+_________________DONNEES PERSONNELLES___________________
+_______________________________________________________
+
+*/
+
+.contenu_donnees_personnelles h3{
+	font-size: 1.5rem;
+}
+
+.contenu_donnees_personnelles p{
+	text-align: justify;
+}
+
+
+
+/*______________________________________________________
+______________________COOKIES___________________________
+_______________________________________________________
+
+*/
+
+.contenu_cookies h3{
+	font-size: 1.5rem;
+}
+
+.contenu_cookies p{
+	text-align: justify;
+}
+
+.tableau_cookies, .tableau_cookies tr, .tableau_cookies td {
+	border: 1px solid lightgrey;
+	text-align: center;
+}
+
+.tableau_cookies {
+	margin-bottom: 20px;
+}
+
+.titre_tableau {
+	font-style: italic;
+}

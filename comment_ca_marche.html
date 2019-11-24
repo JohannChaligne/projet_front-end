@@ -11,8 +11,8 @@
 	<!-- Mon style perso -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-	<script type="text/javascript" src="js\jquery-ui\jquery-ui.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/jquery-ui/jquery-ui.js"></script>
 </head>
 <body>
 <header class="fixed-top">
@@ -62,159 +62,203 @@
 </header>
 <div class="container">
 	<section>
-	<div class="row mini_footer">
-		<div class="col-12 text-center">
-			<div style="background-image: url(images/comment_ca_marche.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; height: 400px; border-radius: 5px;">
-				<h1 class="titre_page">Comment ça marche ?</h1>
+		<div class="row mini_header">
+			<div class="col-12 text-center">
+				<div style="background-image: url(images/comment_ca_marche.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; height: 400px; border-radius: 5px;">
+					<h1 class="titre_page">Comment ça marche ?</h1>
+				</div>
 			</div>
 		</div>
-	</div>
-<section class="marge_aeration">
-	<div class="row">
-		<ul class="nav nav-pills">
-  			<li class="active col-lg-4 d-lg-block d-none col-12">
-  				<a  href="#tab1" data-toggle="tab">			
-  					<div class="etape_achat">
-						<div class="test1">
-							<i class="fas fa-desktop"></i>
+	</section>
+	<section class="marge_aeration">
+		<div class="row">
+			<ul class="nav nav-pills">
+	  			<li class="active col-lg-4 d-lg-block d-none col-12">
+	  				<a  class="lien_cliquable" href="#tab1" data-toggle="tab">			
+	  					<div class="etape_achat">
+							<div class="test1">
+								<i class="fas fa-desktop"></i>
+							</div>
+							<div class="test2 test2_hover">
+								<h3>Commande en ligne</h3>
+								<p>Je passe commande en quelques clics</p>
+							</div>	
 						</div>
-						<div class="test2">
-							<h3>Commande en ligne</h3>
-							<p>Commande rapide et sécurisée</p>
+					</a>
+				</li>
+	  			<li class="col-lg-4 d-lg-block d-none col-12">
+	  				<a class="lien_cliquable" href="#tab2" data-toggle="tab">			
+	  					<div class="etape_achat">
+							<div class="test1">
+								<i class="fas fa-info-circle"></i>
+							</div>
+							<div class="test2 test2_hover">
+								<h3>Confirmation par mail</h3>
+								<p>Une confirmation rapide de votre achat</p>
+							</div>
+						</div>
+					</a>
+				</li>
+	  			<li class="col-lg-4 d-lg-block d-none col-12">
+	  				<a class="lien_cliquable" href="#tab3" data-toggle="tab">			
+		  				<div class="etape_achat">
+							<div class="test1">
+								<i class="fas fa-dolly"></i>
+							</div>
+							<div class="test2 test2_hover">
+								<h3>Livraison</h3>
+								<p>Un envoi rapide et sécurisé.</p>
+							</div>
 						</div>	
-					</div>
-				</a>
-			</li>
-  			<li class="col-lg-4 d-lg-block d-none col-12">
-  				<a href="#tab2" data-toggle="tab">			
-  					<div class="etape_achat">
-						<div class="test1">
-							<i class="fas fa-info-circle"></i>
+					</a>
+				</li>
+			</ul>
+			<div class="tab-content d-lg-block d-none">
+		  		<div class="tab-pane active" id="tab1">
+		  			<p>1. Introduisez votre code postal et choisissez votre produit.</p>
+		  			<p>2. Remplissez les éléments des produits choisis ainsi que vos coordonnées</p>
+		  			<p>3. Choisissez un moyen et une date de paiement.</p>
+		  			<p>4. Cliquez sur valider. Votre commande s'ajoute à votre panier. Vous pouvez continuer à naviguer sur le site, nous nous chargeons de prendre en charge votre commande.</p>
+		  		</div>
+		  		<div class="tab-pane" id="tab2">
+		  			<p>Une fois la validation de votre commande, un mail de confirmation sera envoyé sur la boite mail que vous avez renseigné.</p>
+		  			<p>Ce mail regroupe l'ensemble des informations nécessaires pour la livraison et des consignes à effectuer au préalable avant la livraison.</p>
+		  			<p>Vous pouvez consulter les <a href="cgv.html">condtions générales de ventes</a> et la <a href="faq.html">Foire aux questions</a> pour en savoir plusieurs à ce sujet.</p>
+		  			<p>Vous pouvez aussi nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#">formulaire de contact</a> ou par e-mail à ladresse suivante : info@heatersrus.fr</p>
+		  		</div>
+		  		<div class="tab-pane" id="tab3">
+		  			<h3>Les différents types de livraison :</h3>
+		  			<p> En fonction de votre localité, Heaters R Us vous propose plusieurs options de livraison. La livraison s'effectue par nos partenaires qui garantissent le packtage de vos produits et le transport de vote fioul dnas les meilleures conditions.</p> 
+					<p>La livraison express : vous avez la possibilité d’être livré sous 2 jours ouvrés. Si votre commande de fioul est effectuée après 15h, le délai de livraison express passe à 3 jours ouvrés. Notez que vous ne pourrez pas choisir de créneau dans le cas d’une livraison urgente. Il vous faudra donc être disponible. Un e-mail vous sera envoyé au plus tard la veille de la livraison afin de vous aider à vous organiser.
+					<p>La livraison standard : vous choisissez votre demi-journée de livraison sur les 3 à 5 jours qui suivent votre commande. Les demi-journées sont comprises entre 8h et 13h et entre 13h et 19h. Les prix de ces demi-journées sont calculés en fonction des capacités logistiques de nos partenaires livreurs. Pour cette raison, le coût de la livraison peut varier d’un créneau horaire à l’autre.</p>
+		    	</div>
+			</div>
+			<ul class="nav nav-pills">
+	  			<li class="active col-lg-4 d-lg-block d-none col-12">
+	  				<a  class="lien_cliquable" href="#tab4" data-toggle="tab">			
+	  					<div class="etape_achat">
+							<div class="test1">
+								<i class="fas fa-desktop"></i>
+							</div>
+							<div class="test2 test2_hover">
+								<h3>Des produits de qualité</h3>
+								<p>Gage de qualité</p>
+							</div>	
 						</div>
-						<div class="test2">
-							<h3>Informations</h3>
-							<p>Valider vos informations perssonnelles  pour faciliter la livraison</p>
+					</a>
+				</li>
+	  			<li class="col-lg-4 d-lg-block d-none col-12">
+	  				<a class="lien_cliquable" href="#tab5" data-toggle="tab">			
+	  					<div class="etape_achat">
+							<div class="test1">
+								<i class="fas fa-info-circle"></i>
+							</div>
+							<div class="test2 test2_hover">
+								<h3>Engagement Ecologique</h3>
+								<p>Une société soucieuse de son impact écologique</p>
+							</div>
 						</div>
-					</div>
-				</a>
-			</li>
-  			<li class="col-lg-4 d-lg-block d-none col-12">
-  				<a href="#tab3" data-toggle="tab">			
-	  				<div class="etape_achat">
-						<div class="test1">
-							<i class="fas fa-dolly"></i>
-						</div>
-						<div class="test2">
-							<h3>Livraison</h3>
-							<p>Réceptionnez votre colis ultra protégé</p>
-						</div>
-					</div>	
-				</a>
-			</li>
-		</ul>
-	<div class="tab-content d-lg-block d-none">
-  		<div class="tab-pane active" id="tab1">
-  			<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-  		</div>
-  		<div class="tab-pane" id="tab2">
-  			<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-  		</div>
-  		<div class="tab-pane" id="tab3">
-  			<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-    		<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-    	</div>
-	</div>
-	<ul class="nav nav-pills">
-  			<li class="active col-lg-4 d-lg-block d-none col-12"><a  href="#tab4" data-toggle="tab">			<div class="etape_achat">
-				<div class="test1">
-					<i class="fas fa-desktop"></i>
-				</div>
-				<div class="test2">
-					<h3>Commande en ligne</h3><p>Commande rapide et sécurisée</p>
-				</div>	
-			</div></a></li>
-  			<li class="col-lg-4 d-lg-block d-none col-12">
-  				<a href="#tab5" data-toggle="tab">			
-  					<div class="etape_achat">
-						<div class="test1">
-							<i class="fas fa-info-circle"></i>
-						</div>
-						<div class="test2">
-							<h3>Informations</h3>
-							<p>Valider vos informations perssonnelles  pour faciliter la livraison</p>
-						</div>
-					</div>
-				</a>
-			</li>
-  			<li class="col-lg-4 d-lg-block d-none col-12">
-  				<a href="#tab6" data-toggle="tab">			
-	  				<div class="etape_achat">
-						<div class="test1">
-							<i class="fas fa-dolly"></i>
-						</div>
-						<div class="test2">
-							<h3>Livraison</h3>
-							<p>Réceptionnez votre colis ultra protégé</p>
-						</div>
-					</div>	
-				</a>
-			</li>
-		</ul>
-	<div class="tab-content d-lg-block d-none">
-  		<div class="tab-pane active" id="tab4">
-  			<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-  		</div>
-  		<div class="tab-pane" id="tab5">
-  			<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-  		</div>
-  		<div class="tab-pane" id="tab6">
-  			<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-    		<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-    	</div>
-	</div>
-</section>
-
-<section class="marge_aeration">
-	<div class="row">
-		<p class="accordion d-lg-none col-12"><i class="fas fa-angle-double-down"></i> Commande en ligne</p>
-		<div class="panel">
-  			<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-  		</div>
-
-  		<p class="accordion d-lg-none col-12"><i class="fas fa-angle-double-down"></i> Informations</p>
-		<div class="panel">
-  			<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-  		</div>
-
-  		<p class="accordion d-lg-none col-12"><i class="fas fa-angle-double-down"></i> Livraison</p>
-		<div class="panel">
-  			<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-  		</div>
-
-  		<p class="accordion d-lg-none col-12"><i class="fas fa-angle-double-down"></i> Commande en ligne</p>
-		<div class="panel">
-  			<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-  		</div>
-
-  		<p class="accordion d-lg-none col-12"><i class="fas fa-angle-double-down"></i> Informations</p>
-		<div class="panel">
-  			<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-  		</div>
-
-  		<p class="accordion d-lg-none col-12"><i class="fas fa-angle-double-down"></i> Livraison</p>
-		<div class="panel">
-  			<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-  		</div>
-	</div>
-</section>
+					</a>
+				</li>
+	  			<li class="col-lg-4 d-lg-block d-none col-12">
+	  				<a class="lien_cliquable" href="#tab6" data-toggle="tab">			
+		  				<div class="etape_achat">
+							<div class="test1">
+								<i class="fas fa-dolly"></i>
+							</div>
+							<div class="test2 test2_hover">
+								<h3>Conseil avant livraison</h3>
+								<p>Quelques consignes avant la livraison de votre fioul.</p>
+							</div>
+						</div>	
+					</a>
+				</li>
+			</ul>
+			<div class="tab-content d-lg-block d-none">
+		  		<div class="tab-pane active" id="tab4">
+		  			<p>La satisfaction du client est au centre de nos préoccupations. Nous développons donc constamment nos produits et activités pour en améliorer la qualité. Pour ce faire :</p> 
+					<p>Nous plaçons l’innovation au cœur de notre stratégie, en nous appuyant sur les nouvelles technologies ;
+					Nous évaluons régulièrement notre performance par des enquêtes de satisfaction de nos clients ;
+					Nous réalisons de nombreux contrôles qualité de nos produits ainsi que des audits de nos activités.</p>
+		  		</div>
+		  		<div class="tab-pane" id="tab5">
+		  			<p>Heaters R Us place les enjeux environnementaux au cœur de sa stratégie de développement.  Engagé pour une énergie meilleure, la société apporte des réponses concrètes aux défis environnementaux et énergétiques actuels.</p>
+					<p>Heaters R Us veille à améliorer sans cesse les performances environnementales de ses produits et à vous proposer une énergie toujours plus propre.
+					Parce qu’il améliore la qualité de la combustion et protège votre installation de la corrosion,Heaters R Us Fioul supérieur permet, comparativement à un fioul ordinaire, de réduire de 40 % les rejets de monoxyde de carbone et de 30 % les émissions de suies dans l'atmosphère.</p>
+		  		</div>
+		  		<div class="tab-pane" id="tab6">
+		  			<h3>Quelques informations et conseils pour une livraison de fioul</h3>
+					<p>Durée d’une livraison de fioul : Une livraison de fioul dure entre 15 et 30 minutes selon les cas de figure. Vous devrez impérativement être présent(e) afin d’accueillir le livreur et de lui indiquer l’emplacement de votre cuve. Vous pouvez vous faire représenter par un proche.</p>
+					<p>Avant la livraison : Faites vérifier votre équipement par un professionnel afin de prévenir tout problème ;
+					Lors de la commande, indiquez toutes les informations importantes et utiles pour le livreur : présence d’un chien, nécessité d’appeler en arrivant sur place, nom de la personne chez qui il faut sonner, chemin étroit… Dites-nous tout !
+					Quelques heures avant la livraison, éteignez votre chaudière afin qu’elle ne se mette pas en route pendant la livraison ;
+					Avant de faire remplir votre cuve, vérifiez le type de fioul livré ainsi que la quantité avec le livreur.</p>
+					<p>Après la livraison : N’oubliez pas de récupérer votre bon de livraison, récapitulant le prix, la quantité et le type de fioul livré.
+					Attendez entre 1 et 2 heures avant de rallumer votre chaudière. En effet, lors de la livraison, de nombreuses particules sont en suspension. Il est préférable d’attendre qu’elles retombent afin que le fioul se décante et d’éviter tout encrassement de votre système de chauffage.</p>
+					<p>Si vous avez besoin d’informations complémentaires ou rencontrez le moindre problème concernant votre commande et votre livraison de fioul, contactez l’équipe de Heaters R Us !</p>
+	    		</div>
+			</div>
+		</div>
+	</section>
+	<section class="marge_aeration">
+		<div class="row">
+			<p class="accordion d-lg-none col-12"><i class="fas fa-angle-double-down"></i> Commande en ligne</p>
+			<div class="panel">
+	  			<p>1. Introduisez votre code postal et choisissez votre produit.</p>
+		  		<p>2. Remplissez les éléments des produits choisis ainsi que vos coordonnées</p>
+		  		<p>3. Choisissez un moyen et une date de paiement.</p>
+		  		<p>4. Cliquez sur valider. Votre commande s'ajoute à votre panier. Vous pouvez continuer à naviguer sur le site, nous nous chargeons de prendre en charge votre commande.</p>
+	  		</div>
+	  		<p class="accordion d-lg-none col-12"><i class="fas fa-angle-double-down"></i> Informations</p>
+			<div class="panel">
+	  			<p>Une fois la validation de votre commande, un mail de confirmation sera envoyé sur la boite mail que vous avez renseigné.</p>
+		  		<p>Ce mail regroupe l'ensemble des informations nécessaires pour la livraison et des consignes à effectuer au préalable avant la livraison.</p>
+		  		<p>Vous pouvez consulter les <a href="cgv.html">condtions générales de ventes</a> et la <a href="faq.html">Foire aux questions</a> pour en savoir plusieurs à ce sujet.</p>
+		  		<p>Vous pouvez aussi nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#">formulaire de contact</a> ou par e-mail à ladresse suivante : info@heatersrus.fr</p>
+	  		</div>
+	  		<p class="accordion d-lg-none col-12"><i class="fas fa-angle-double-down"></i>Livraison</p>
+			<div class="panel">
+	  			<h3>Les différents types de livraison :</h3>
+		  		<p> En fonction de votre localité, Heaters R Us vous propose plusieurs options de livraison. La livraison s'effectue par nos partenaires qui garantissent le packtage de vos produits et le transport de vote fioul dnas les meilleures conditions.</p> 
+				<p>La livraison express : vous avez la possibilité d’être livré sous 2 jours ouvrés. Si votre commande de fioul est effectuée après 15h, le délai de livraison express passe à 3 jours ouvrés. Notez que vous ne pourrez pas choisir de créneau dans le cas d’une livraison urgente. Il vous faudra donc être disponible. Un e-mail vous sera envoyé au plus tard la veille de la livraison afin de vous aider à vous organiser.
+				<p>La livraison standard : vous choisissez votre demi-journée de livraison sur les 3 à 5 jours qui suivent votre commande. Les demi-journées sont comprises entre 8h et 13h et entre 13h et 19h. Les prix de ces demi-journées sont calculés en fonction des capacités logistiques de nos partenaires livreurs. Pour cette raison, le coût de la livraison peut varier d’un créneau horaire à l’autre.</p>
+	  		</div>
+	  		<p class="accordion d-lg-none col-12"><i class="fas fa-angle-double-down"></i>Des produits de qualité</p>
+			<div class="panel">
+	  			<p>La satisfaction du client est au centre de nos préoccupations. Nous développons donc constamment nos produits et activités pour en améliorer la qualité. Pour ce faire :</p> 
+				<p>Nous plaçons l’innovation au cœur de notre stratégie, en nous appuyant sur les nouvelles technologies ;
+				Nous évaluons régulièrement notre performance par des enquêtes de satisfaction de nos clients ;
+				Nous réalisons de nombreux contrôles qualité de nos produits ainsi que des audits de nos activités.</p>
+	  		</div>
+	  		<p class="accordion d-lg-none col-12"><i class="fas fa-angle-double-down"></i>Engagement écologique</p>
+			<div class="panel">
+	  			<p>Heaters R Us place les enjeux environnementaux au cœur de sa stratégie de développement.  Engagé pour une énergie meilleure, la société apporte des réponses concrètes aux défis environnementaux et énergétiques actuels.</p>
+				<p>Heaters R Us veille à améliorer sans cesse les performances environnementales de ses produits et à vous proposer une énergie toujours plus propre.
+				Parce qu’il améliore la qualité de la combustion et protège votre installation de la corrosion,Heaters R Us Fioul supérieur permet, comparativement à un fioul ordinaire, de réduire de 40 % les rejets de monoxyde de carbone et de 30 % les émissions de suies dans l'atmosphère.</p>
+	  		</div>
+	  		<p class="accordion d-lg-none col-12"><i class="fas fa-angle-double-down"></i> Livraison</p>
+			<div class="panel">
+	  			<h3>Quelques informations et conseils pour une livraison de fioul</h3>
+				<p>Durée d’une livraison de fioul : Une livraison de fioul dure entre 15 et 30 minutes selon les cas de figure. Vous devrez impérativement être présent(e) afin d’accueillir le livreur et de lui indiquer l’emplacement de votre cuve. Vous pouvez vous faire représenter par un proche.</p>
+				<p>Avant la livraison : Faites vérifier votre équipement par un professionnel afin de prévenir tout problème ;
+				Lors de la commande, indiquez toutes les informations importantes et utiles pour le livreur : présence d’un chien, nécessité d’appeler en arrivant sur place, nom de la personne chez qui il faut sonner, chemin étroit… Dites-nous tout !
+				Quelques heures avant la livraison, éteignez votre chaudière afin qu’elle ne se mette pas en route pendant la livraison ;
+				Avant de faire remplir votre cuve, vérifiez le type de fioul livré ainsi que la quantité avec le livreur.</p>
+				<p>Après la livraison : N’oubliez pas de récupérer votre bon de livraison, récapitulant le prix, la quantité et le type de fioul livré.
+				Attendez entre 1 et 2 heures avant de rallumer votre chaudière. En effet, lors de la livraison, de nombreuses particules sont en suspension. Il est préférable d’attendre qu’elles retombent afin que le fioul se décante et d’éviter tout encrassement de votre système de chauffage.</p>
+				<p>Si vous avez besoin d’informations complémentaires ou rencontrez le moindre problème concernant votre commande et votre livraison de fioul, contactez l’équipe de Heaters R Us !</p>
+	  		</div>
+		</div>
+	</section>
 	<div class="row marge_aeration">
-			<a href="#" class="offset-2 col-8 offset-2 text-center"><button class="retour_haut_page  "><i class="fas fa-angle-double-up"></i> Retour en haut de la page <i class="fas fa-angle-double-up"></i></button></a>
+		<button class="retour_haut_page offset-2 col-8 offset-2 text-center">
+			<i class="fas fa-angle-double-up"></i> Retour en haut de la page <i class="fas fa-angle-double-up"></i>
+		</button>
 	</div>
-</section>
-
-
 </div>
-<!-- Footer -->
+
+
+<!-- FOOTER -->
 <footer>
 	<div class="container">
     	<div class="row">

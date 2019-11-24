@@ -58,178 +58,183 @@
 		</div>
 	</div>
 </header>
-<div class="container">
-<!-- Formulaire d'achats -->	
-<section>
-<!--Création du 2ème PARALLAX -->	
-	<div class="row phase2 parallax" style="background-image: url(images/salon_parallax.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
-		<div id="formulaire1" class="commande col-lg-5 col-sm-12 col-12">
-			<form method="post" action="ma_base_de_donnee.html">
-				<h2 class="titre">FIOUL</h2>
-				<p>
-				<label class="col-lg-4 col-sm-4 col-4">Code Postal</label>
-				<input class="col-lg-7 col-sm-7 col-7" type="number" name="code_postal" placeholder="75000" min="5" max="5">	
-				</p>
-				<p>
-				<label class="col-lg-4 col-sm-4 col-4">Quantité</label>
-				<input class="col-lg-7 col-sm-7 col-7" type="number" name="quantite">	
-				</p>
-				<p>
-				<label class="col-lg-4 col-sm-4 col-4">Produit</label>
-				<select class="col-lg-7 col-sm-7 col-7">
-					<optgroup label="Modèle 1">
-						<option>Produit</option>
-						<option>Produit</option>
-						<option>Produit</option>
-						<option>Produit</option>
-						<option>Produit</option>
-					</optgroup>	
-					<optgroup label="Modele 2">
-						<option>Produit</option>
-						<option>Produit</option>
-						<option>Produit</option>
-						<option>Produit</option>
-						<option>Produit</option>
-					</optgroup>
-				</select>	
-				</p>				
-				<p>
-				<label class="col-lg-4 col-sm-4 col-4">Email</label>
-				<input class="col-lg-7 col-sm-7 col-7" type="email" name="email" placeholder="name@example.com" pattern=".+@.+.[a-z]{2,3}" >	
-				</p>
-				<p>
-				<button class="btn btn-danger" type="submit">Commander du fioul</button>
-				</p>
-			</form>				
-		</div>
 
-		<div id="formulaire2" class="commande offset-lg-2 col-lg-5 col-sm-12 col-12">
-			<form method="post" action="ma_base_de_donnee.html">
-				<h2 class="titre">CHAUDIERE</h2>
-				<p>
-				<label class="col-lg-4 col-sm-4 col-4">Code Postal</label>
-				<input class="col-lg-7 col-sm-7 col-7" type="number" name="code_postal" placeholder="75000" min="5" max="5">
-				</p>
-				<p>
-				<label class="col-lg-4 col-sm-4 col-4">Type</label>
-				<input class="col-lg-7 col-sm-7 col-7" type="text" name="type">	
-				</p>
-				<p>
-				<label class="col-lg-4 col-sm-4 col-4">Modèle</label>
-				<select class="col-lg-7 col-sm-7 col-7">
-					<option>Modele</option>
-					<option>Modele</option>
-					<option>Modele</option>
-					<option>Modele</option>
-					<option>Modele</option>
-					<option>Modele</option>
-					<option>Modele</option>
-					<option>Modele</option>
-					<option>Modele</option>
-					<option>Modele</option>
-				</select>	
-				</p>				
-				<p>
-				<label class="col-lg-4 col-sm-4 col-4">Email</label>
-				<input class="col-lg-7 col-sm-7 col-7" type="email" name="email" placeholder="name@example.com" pattern=".+@.+.[a-z]{2,3}">	
-				</p>
-				<p>
-				<button class="btn btn-danger" type="submit">Valider ma chaudière</button>
-				</p>
-			</form>				
+
+<div class="container">
+<!-- FORMULAIRE D'ACHAT RAPIDE -->	
+	<section>
+<!--Création du 1er PARALLAX -->	
+		<div class="row phase2 parallax" style="background-image: url(images/salon_parallax.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
+			<div class="commande col-lg-5 col-12">
+				<div class="row">
+					<form class="col-12" method="post" action="ma_base_de_donnee.html">
+						<div class="row">
+							<h2 class="css_h2 titre offset-1 col-10 offset-1">FIOUL</h2>
+							<label class="offset-1 col-5">Code Postal</label>
+							<input class="formulaire col-5" type="number" name="code_postal" placeholder="75000" min="5" max="5">	
+							<label class="offset-1 col-5">Quantité</label>
+							<input class="formulaire col-5" type="number" name="quantite">	
+							<label class="offset-1 col-5">Produit</label>
+							<select class="formulaire col-5">
+								<optgroup label="Modèle 1">
+									<option>Produit</option>
+									<option>Produit</option>
+									<option>Produit</option>
+									<option>Produit</option>
+									<option>Produit</option>
+								</optgroup>	
+								<optgroup label="Modele 2">
+									<option>Produit</option>
+									<option>Produit</option>
+									<option>Produit</option>
+									<option>Produit</option>
+									<option>Produit</option>
+								</optgroup>
+							</select>	
+							<label class="offset-1 col-5">Email</label>
+							<input class="formulaire col-5" type="email" name="email" placeholder="name@example.com" pattern=".+@.+.[a-z]{2,3}" >
+							<button class="btn btn-danger offset-1 col-10 offset-1" type="submit">Commander du fioul</button>
+						</div>
+					</form>				
+				</div>
+			</div>
+			<div class="commande offset-lg-2 col-lg-5 col-12">
+				<div class="row">
+					<form class="col-12" method="post" action="ma_base_de_donnee.html">
+						<div class="row">
+							<h2 class="css_h2 titre offset-1 col-10 offset-1">CHAUDIERE</h2>
+							<label class="offset-1 col-5">Code Postal</label>
+							<input class="formulaire col-5" type="number" name="code_postal" placeholder="75000" min="5" max="5">
+							<label class="offset-1 col-5">Type</label>
+							<select class="formulaire col-5" name="type">
+								<option>Marque</option>
+								<option>Marque</option>
+								<option>Marque</option>
+								<option>Marque</option>
+								<option>Marque</option>
+								<option>Marque</option>
+								<option>Marque</option>
+								<option>Marque</option>
+								<option>Marque</option>
+								<option>Marque</option>
+							</select>	
+							<label class="offset-1 col-5">Modèle</label>
+							<select class="formulaire col-5">
+								<option>Modele</option>
+								<option>Modele</option>
+								<option>Modele</option>
+								<option>Modele</option>
+								<option>Modele</option>
+								<option>Modele</option>
+								<option>Modele</option>
+								<option>Modele</option>
+								<option>Modele</option>
+								<option>Modele</option>
+							</select>	
+							<label class="offset-1 col-5">Email</label>
+							<input class="formulaire col-5" type="email" name="email" placeholder="name@example.com" pattern=".+@.+.[a-z]{2,3}">	
+							<button class="btn btn-danger offset-1 col-10 offset-1" type="submit">Valider ma chaudière</button>
+						</div>
+					</form>
+				</div>							
+			</div>
 		</div>
-	</div>
-</section>
+	</section>
+
+
 <!-- BARRE D'ETAPE ACHAT-->
-<section class="marge_aeration">
-	<div class="row">
-		<div class="col-lg-4 d-none d-lg-block">
-			<div class="etape_achat">
+	<section class="marge_aeration">
+		<div class="row">
+			<div class="col-lg-4 d-none d-lg-block">
+				<div class="etape_achat">
 					<div class="test1">
 						<i class="fas fa-desktop"></i>
 					</div>
 					<div class="test2">
 						<h3>Commande en ligne</h3><p>Commande rapide et sécurisée</p>
 					</div>	
-			</div>
-		</div>
-		<div class="col-lg-4 d-none d-lg-block">
-			<div class="etape_achat">
-				<div class="test1">
-					<i class="fas fa-info-circle"></i>
-				</div>
-				<div class="test2">
-					<h3>Informations</h3><p>Valider vos informations perssonnelles  pour faciliter la livraison</p>
 				</div>
 			</div>
-		</div>
-		<div class="col-lg-4 d-none d-lg-block">
-			<div class="etape_achat">
-				<div class="test1">
-					<i class="fas fa-dolly"></i>
-				</div>
-				<div class="test2">
-					<h3>Livraison</h3><p>Réceptionnez votre colis ultra protégé</p>
-				</div>
-			</div>		
-		</div>
-	</div>
-<!-- Defilement des informations en Responsive-->
-	<div class="row">
-		<div class="col-12 d-lg-none">
-			<div class="etape_achat">
-				<div class="defilement2">
-					<div class="test1">
-						<i class="fas fa-desktop"></i>
-					</div>
-					<div class="test2 col-12">
-						<h3>Commande en ligne</h3><p>Commande rapide et sécurisée</p>
-					</div>
-					<div class="test1">
-						<i class="fas fa-dolly"></i>
-					</div>
-					<div class="test2 col-12">
-						<h3>Livraison</h3><p>Réceptionnez votre colis ultra protégé</p>
-					</div>
+			<div class="col-lg-4 d-none d-lg-block">
+				<div class="etape_achat">
 					<div class="test1">
 						<i class="fas fa-info-circle"></i>
 					</div>
-					<div class="test2 col-12">
+					<div class="test2">
 						<h3>Informations</h3><p>Valider vos informations perssonnelles  pour faciliter la livraison</p>
 					</div>
 				</div>
 			</div>
+			<div class="col-lg-4 d-none d-lg-block">
+				<div class="etape_achat">
+					<div class="test1">
+						<i class="fas fa-dolly"></i>
+					</div>
+					<div class="test2">
+						<h3>Livraison</h3><p>Réceptionnez votre colis ultra protégé</p>
+					</div>
+				</div>		
+			</div>
 		</div>
-	</div>
-</section>
+<!-- Defilement des informations en Responsive-->
+		<div class="row">
+			<div class="col-12 d-lg-none">
+				<div class="etape_achat">
+					<div class="defilement2">
+						<div class="test1">
+							<i class="fas fa-desktop"></i>
+						</div>
+						<div class="test2 col-12">
+							<h3>Commande en ligne</h3><p>Commande rapide et sécurisée</p>
+						</div>
+						<div class="test1">
+							<i class="fas fa-dolly"></i>
+						</div>
+						<div class="test2 col-12">
+							<h3>Livraison</h3><p>Réceptionnez votre colis ultra protégé</p>
+						</div>
+						<div class="test1">
+							<i class="fas fa-info-circle"></i>
+						</div>
+						<div class="test2 col-12">
+							<h3>Informations</h3><p>Valider vos informations perssonnelles  pour faciliter la livraison</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
 <!-- ENTREPRISE ET AVIS CLIENT -->
-<section class="marge_aeration">
-<!-- Information Société-->	
-	<div class="row">
-		<div class="col-lg-6">
-			<div class="titre_societe">
-				<h3>En savoir plus sur nous</h3>
+	<section class="marge_aeration">
+	<!-- Information Société-->	
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="titre_societe">
+					<h3>En savoir plus sur nous</h3>
+				</div>
+				<div class="etape_societe">
+					<h4>Le 1er titre est le suivant</h4><img src="images/entreprise1.jpg" alt="mission n°1 entreprise"><p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				</div>
+				<div class="etape_societe2">
+					<h4>Le 2eme titre est le suivant</h4><img src="images/entreprise1.jpg" alt="mission n°1 entreprise">
+					<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+				</div>
+				<div class="etape_societe">
+					<h4>Le 3eme titre est le suivant</h4><img src="images/entreprise1.jpg" alt="mission n°1 entreprise">
+					<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				</div>
 			</div>
-			<div class="etape_societe">
-				<h4>Le 1er titre est le suivant</h4><img src="images/entreprise1.jpg" alt="mission n°1 entreprise"><p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-			</div>
-			<div class="etape_societe2">
-				<h4>Le 2eme titre est le suivant</h4><img src="images/entreprise1.jpg" alt="mission n°1 entreprise">
-				<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-			</div>
-			<div class="etape_societe">
-				<h4>Le 3eme titre est le suivant</h4><img src="images/entreprise1.jpg" alt="mission n°1 entreprise">
-				<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniamtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-			</div>
-		</div>
+
 <!-- AVIS CLIENT-->
-		<div class="col-lg-6">
-			<div class="avis_produit">
-				<h3>Et qu'en penses nos clients ?</h3>
-			</div>
+			<div class="col-lg-6">
+				<div class="avis_produit">
+					<h3>Et qu'en pense nos clients ?</h3>
+				</div>
 <!-- Carousel des avis clients -->
     			<div id="carousel_avis" class="carousel slide" data-ride="carousel">
     				<ol class= "carousel-indicators" > 
@@ -283,108 +288,119 @@
  						<span class= "sr-only"> Suivant </span> 
  					</a> 
     			</div>
-		</div>	
-	</div> 
-</section>
+			</div>	
+		</div> 
+	</section>
+
+
 <!-- BARRE DE REASSURANCE-->
-<section>
-	<div class="row">
-		<div class="col-lg-4 d-none d-lg-block">
-			<div class="etape_achat">
-				<div class="test1">
-					<i class="fas fa-desktop"></i>
-				</div>
-				<div class="test2">
-					<h3>Commande en ligne</h3><p>Commande rapide et sécurisée</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 d-none d-lg-block">
-			<div class="etape_achat">
-				<div class="test1">
-					<i class="fas fa-info-circle"></i>
-				</div>
-				<div class="test2">
-					<h3>Informations</h3><p>Valider vos informations perssonnelles  pour faciliter la livraison</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-4 d-none d-lg-block">
-			<div class="etape_achat">
-				<div class="test1">
-					<i class="fas fa-dolly"></i>
-				</div>
-				<div class="test2">
-					<h3>Livraison</h3><p>Réceptionnez votre colis ultra protégé</p>
-				</div>
-			</div>
-		</div>
-	</div>
-<!-- Defilement des informations en Responsive-->
-		<div class="col-12 d-lg-none">
-			<div class="etape_achat">
-				<div class="defilement2">
+	<section>
+		<div class="row">
+			<div class="col-lg-4 d-none d-lg-block">
+				<div class="etape_achat">
 					<div class="test1">
 						<i class="fas fa-desktop"></i>
 					</div>
-					<div class="test2 col-12" >
+					<div class="test2">
 						<h3>Commande en ligne</h3><p>Commande rapide et sécurisée</p>
 					</div>
-					<div class="test1">
-						<i class="fas fa-dolly"></i>
-					</div>
-					<div class="test2 col-12" >
-						<h3>Livraison</h3><p>Réceptionnez votre colis ultra protégé</p>
-					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 d-none d-lg-block">
+				<div class="etape_achat">
 					<div class="test1">
 						<i class="fas fa-info-circle"></i>
 					</div>
-					<div class="test2 col-12">
+					<div class="test2">
 						<h3>Informations</h3><p>Valider vos informations perssonnelles  pour faciliter la livraison</p>
 					</div>
 				</div>
 			</div>
-		</div>
-</section>
-<!-- ACTUALITES et AVIS CLIENTS-->
-<section class="marge_aeration">
-<!--Création du 2ème PARALLAX -->
-	<div class="row phase3 parallax2" style="background-image: url(images/salon_parallax.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
-		<div class="col-lg-6 col-12">
-<!-- Partie des Actualités-->
-			<div class="couleur_fond">
-				<div class="titre_actualite">
-					<h3>Actualités</h3>
-				</div>
-				<div class="etape_actualite col-11 offset-1">
-					<a href=""><img src="images/actualite1.jpg" alt="actualite n°1 entreprise"><h4>Le lien du 1er article</h4><p>Description rapide du 1er article</p></a>
-				</div>
-				<div class="etape_actualite col-11 offset-1">
-					<a href=""><img src="images/actualite2.jpg" alt="actualite n°2 entreprise"><h4>Le lien du 1er article</h4><p>Description rapide du 1er article</p></a>
+			<div class="col-lg-4 d-none d-lg-block">
+				<div class="etape_achat">
+					<div class="test1">
+						<i class="fas fa-dolly"></i>
+					</div>
+					<div class="test2">
+						<h3>Livraison</h3><p>Réceptionnez votre colis ultra protégé</p>
+					</div>
 				</div>
 			</div>
+		</div>
+<!-- Defilement des informations en Responsive-->
+		<div class="row">
+			<div class="col-12 d-lg-none">
+				<div class="etape_achat">
+					<div class="defilement2">
+						<div class="test1">
+							<i class="fas fa-desktop"></i>
+						</div>
+						<div class="test2 col-12" >
+							<h3>Commande en ligne</h3><p>Commande rapide et sécurisée</p>
+						</div>
+						<div class="test1">
+							<i class="fas fa-dolly"></i>
+						</div>
+						<div class="test2 col-12" >
+							<h3>Livraison</h3><p>Réceptionnez votre colis ultra protégé</p>
+						</div>
+						<div class="test1">
+							<i class="fas fa-info-circle"></i>
+						</div>
+						<div class="test2 col-12">
+							<h3>Informations</h3><p>Valider vos informations perssonnelles  pour faciliter la livraison</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
 
-		</div>
-		<div class="col-lg-6 col-12">
+
+<!-- ACTUALITES et AVIS CLIENTS-->
+	<section class="marge_aeration">
+<!--Création du 2ème PARALLAX -->
+		<div class="row phase3 parallax2" style="background-image: url(images/salon_parallax.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
+			<div class="couleur_fond col-lg-6 col-12">
+<!-- Partie des Actualités-->
+				<div class="row">
+					<div class="offset-1 col-10 offset-1 titre_actualite">
+						<h3>Actualités</h3>
+					</div>
+					<div class="etape_actualite offset-1 col-10 offset-1">
+						<a href=""><img src="images/actualite1.jpg" alt="actualite n°1 entreprise"><h4>Le lien du 1er article</h4><p>Description rapide du 1er article</p></a>
+					</div>
+					<div class="etape_actualite offset-1 col-10 offset-1">
+						<a href=""><img src="images/actualite2.jpg" alt="actualite n°2 entreprise"><h4>Le lien du 1er article</h4><p>Description rapide du 1er article</p></a>
+					</div>
+				</div>
+			</div>
+			<div class="couleur_fond col-lg-6 col-12">
 <!-- Partie des Produits et Services-->
-			<div class="couleur_fond">
-				<div class="titre_produit_service">
-					<h3>Produits et Services</h3>
-				</div>
-				<div class="etape_produit_service col-12 text-center">
-					<img src="images/produit1.jpg" alt="produit n°1 entreprise">
-					<p class="offset-2 col-8 offset-2">Nous respectons l'environnement</p>
-				</div>
-				<div class="etape_produit_service col-12 text-center">
-					<img src="images/produit2.jpg" alt="produit n°2 entreprise">
-					<p class="offset-2 col-8 offset-2">Découvrez la chaleur naturelle</p>
+				<div class="row">
+					<div class="titre_produit_service offset-1 col-10 offset-1">
+						<h3>Produits et Services</h3>
+					</div>
+					<div class="marge_aeration col-12 text-center">
+						<div class="row etape_produit_service">
+							<img class="offset-2 col-8 offset-2" src="images/produit1.jpg" alt="produit n°1 entreprise">
+						<p class="offset-2 col-8 offset-2">Nous respectons l'environnement</p>
+						</div>
+					</div>
+					<div class="col-12 text-center">
+						<div class="row etape_produit_service">
+							<img class="offset-2 col-8 offset-2" src="images/produit2.jpg" alt="produit n°2 entreprise">
+							<p class="offset-2 col-8 offset-2">Découvrez la chaleur naturelle</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 </div>
-<!-- Footer -->
+
+
+<!-- FOOTER -->
 <footer>
 	<div class="container">
     	<div class="row">

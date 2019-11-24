@@ -56,10 +56,10 @@ header {
 	background-attachment: fixed;
 }*/
 
-/*Création des div commande Fioul et Chaudière*/
+/*CSS des FORMULAIRES D'ACHAT RAPIDE Fioul et Chaudière*/
 .commande {
 	width: 500px;
-	height: 300px;
+	height: 270px;
 	border: 1px solid lightgrey;
 	border-radius: 10px;
 	background-color: rgba(255,255,255,0.5);
@@ -68,7 +68,7 @@ header {
 	margin-bottom: 20px;
 }
 
-h2{
+.css_h2{
 	background-color: #fd1015;
 	color: white;
 	text-align: center;
@@ -76,13 +76,13 @@ h2{
 	font-size: 20px;
 }
 
+.formulaire {
+	margin: 5px 0px;
+}
+
 div .phase2 {
 	margin-right: 0px;
 	margin-left: 0px;
-}
-
-label {
-	margin-bottom: 0rem;
 }
 
 .btn-danger {
@@ -129,14 +129,7 @@ label {
 .defilement2 {                               
   	display: flex;
   	padding-left: 100%;                                     
-  	animation: 30s linear 0s normal none infinite defilement;
-/*	animation-name: defilement;
-	animation-duration: 30s;
-	animation-delay: 0s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: normal;
-	animation-fill-mode: none;*/
+  	animation: 25s linear 0s normal none infinite defilement;
 }
 
 @keyframes defilement {
@@ -144,7 +137,7 @@ label {
   		transform: translate(0);
   	}
 	100% {
-		transform: translate(-2000px);
+		transform: translate(-2600px);
 	}
 }
 
@@ -406,7 +399,15 @@ ______________________________________________________
 	color: white;
 }
 
-.mini_footer {
+.sexe {
+	padding: 0px;
+}
+
+.case_a_cocher {
+	margin-top: 5px;
+}
+
+.mini_header {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -419,10 +420,6 @@ ______________________________________________________
 
 
 /*CSS des parties DEVIS, INFORMATIONS et COMMANDE*/
-
-.formulaire {
-	margin: 5px 0px;
-}
 
 /*CSS pour l'évolution des prix du fioul*/
 
@@ -470,10 +467,10 @@ _______________________________________________________
 
 .titre_faq:hover, li .accordion:hover {
 	background-color: #fd1015;
-	color: white;
+	color: black;
 }
 
-div .panel p {
+div .panel {
 	text-align: justify;
 	padding: 5px;
 	color: black;
@@ -481,10 +478,6 @@ div .panel p {
 
 .suppression_padding {
 	padding: 0px;
-}
-
-.encadre_box{
-	box-shadow: 5px 5px 5px black;
 }
 
 .retour_haut_page {
@@ -515,6 +508,13 @@ _______________________________________________________
 	text-align: justify;
 }
 
+.contenu_cgv h4{
+	font-size: 1.2rem;
+}
+
+.contenu_cgv span{
+	font-weight: bold;
+}
 
 
 
@@ -544,6 +544,8 @@ _________________DONNEES PERSONNELLES___________________
 _______________________________________________________
 
 */
+
+
 
 .contenu_donnees_personnelles h3{
 	font-size: 1.5rem;
@@ -596,3 +598,48 @@ _______________________________________________________
 .tab-pane {
 	text-align: justify;
 }
+
+.lien_cliquable:hover {
+	text-decoration: none;
+}
+
+.test2_hover:hover {
+	color: #fd1015;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -58,169 +58,204 @@
 		</div>
 	</div>
 </header>
+
+
 <div class="container">
 <!-- INTRODCUTION DE PAGE-->
-<section>
-	<div class="row mini_footer">
-		<div class="col-12 text-center">
-			<div style="background-image: url(images/pompe_fioul.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; height: 400px; border-radius: 5px;">
-				<h1 class="titre_page">Achat de fioul</h1>
+	<section>
+		<div class="row mini_header">
+			<div class="col-12 text-center">
+				<div style="background-image: url(images/pompe_fioul.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; height: 400px; border-radius: 5px;">
+					<h1 class="titre_page">Achat de fioul</h1>
+				</div>
+			</div>
+			<div class="col-lg-2 d-none d-lg-block text-center">
+				<span>1. Devis</span>
+			</div>
+			<div class="ligne col-lg-3 d-none d-lg-block text-center">
+			</div>
+			<div class="col-lg-2 d-none d-lg-block text-center">
+				<span>2. Informations</span>
+			</div>
+			<div class="ligne col-lg-3 d-none d-lg-block text-center">
+			</div>
+			<div class="col-lg-2 d-none d-lg-block text-center">
+				<span>3. Commande</span>
 			</div>
 		</div>
-		<div class="col-lg-2 d-none d-lg-block text-center">
-			<span>1. Devis</span>
-		</div>
-		<div class="ligne col-lg-3 d-none d-lg-block text-center">
-		</div>
-		<div class="col-lg-2 d-none d-lg-block text-center">
-			<span>2. Informations</span>
-		</div>
-		<div class="ligne col-lg-3 d-none d-lg-block text-center">
-		</div>
-		<div class="col-lg-2 d-none d-lg-block text-center">
-			<span>3. Commande</span>
-		</div>
-	</div>
-</section>
-<!-- PARTIE DEVIS - INFORMATIONS - COMMANDE-->
-<div class="row">
-	<section class="marge_aeration col-lg-8 col-12">	
-<!-- PARTIE DEVIS-->		
-		<article class="row marge_aeration"> 
-			<div class="col-12"> 
-				<h2>1. Devis</h2>
-				<form method="post" action="ma_base_de_donnee2.html">
-					<label class="col-lg-6 col-12">Choisissez votre volume de fioul</label>
-					<input style="text-align: right;" class="formulaire col-lg-5 col-12" type="text" name="volume_fioul" placeholder="10 litres" value="litres">
-					<label class="col-lg-6 col-12">Choisissez votre qualité de fioul</label>
-					<select class="formulaire col-lg-5 col-12" name="qualite_fioul">
-						<option>Supérieur</option>
-						<option>Ordinaire</option>
-					</select>
-					<label class="col-lg-6 col-12">Choisissez votre créneau de livraison</label>
-					<input class="formulaire col-lg-5 col-12" type="date" name="calendrier">
-					<p style="font-size: 0.8rem;" class="offset-6">*sous réserve de la disponibilité du chauffeur</p>
-				</form>
-			</div>
-		</article>
-<!-- PARTIE INFORMATIONS-->
-		<article class="row marge_aeration">
-			<div class="col-12">
-				<h2>2. Informations</h2>
-				<form method="post" action="ma_base_de_donnee2.html">
-					<label class="col-lg-3 col-12">Prénom</label>
-					<input class="formulaire col-lg-3 col-12" type="text" name="votre_prenom">
-					<label class="col-lg-2 col-12">Nom</label>
-					<input class="formulaire col-lg-3 col-12" type="text" name="votre_nom">
-					<label class="col-lg-3 col-12">Portable</label>
-					<input class="formulaire col-lg-3 col-12" type="number" name="numero_fixe">
-					<label class="formulaire col-lg-2 col-12">Fixe</label>
-					<input class="formulaire col-lg-3 col-12" type="number" name="numero_portable">
-					<label class="formulaire col-lg-3 col-12">Email :</label>
-					<input class="formulaire col-lg-3 col-12" type="email" name="email" placeholder="name@example.com" pattern=".+@.+.[a-z]{2,3}">
-    				<label class="formulaire col-lg-3 col-6">Civilité</label>
-    				<input type="checkbox" id="civilite_homme" name="civilite_homme" value="civilite_homme">
-	    			<label class="formulaire">Mr</label>
-    				<input type="checkbox" id="civilite_femme" name="civilite_femme" value="civilite_femme">
-    				<label class="formulaire">Mme</label>
-				
-
-    				<label class="formulaire col-lg-3 col-12">Code Postal</label>
-					<input class="formulaire col-lg-3 col-12" type="number" name="code_postal" placeholder="75000" min="5" max="5">
-					<label class="formulaire col-lg-2 col-12">Ville</label>
-					<input class="formulaire col-lg-3 col-12" type="text" name="votre_ville">
-					<label class="formulaire col-lg-3 col-12">Adresse</label>
-					<textarea class="formulaire col-lg-3 col-12"></textarea>
-					<label class="formulaire col-lg-2 col-12">Commantaire personnel</label>
-					<textarea class="formulaire col-lg-3 col-12"></textarea>
-					<label class="formulaire col-lg-3 col-12">Société <p style="font-size: 0.8rem;">(facultatif)</p></label>
-					<input class="formulaire col-lg-3 col-12" type="text" name="votre_ville">
-    				<input class="col-lg-1" type="checkbox" id="adresse_facturation_differente" name="adresse_facturation_differente" value="adresse_facturation_differente">
-					<label class="formulaire col-lg-4" style="font-size: 0.8rem;">Mon adresse de facturation est différente de mon adresse de livraison</label>
-				</form>
-			</div>
-		</article>
-<!-- PARTIE COMMANDE-->
-		<article class="row marge_aeration">
-			<div class="col-12">
-				<h2>3. Commande</h2>
-				<form method="post" action="ma_base_de_donnee2.html">
-					<label class="col-lg-6 col-12">Mode de paiement</label>
-					<select class="formulaire col-lg-5 col-12" name="qualite_fioul">
-						<option>Chèques</option>
-						<option>Espèces</option>
-						<option>Carte bancaire</option>
-						<option>Virement</option>
-					</select>
-					<label class="col-lg-6 col-12">Moment du paiement</label>
-					<input class="formulaire col-lg-5 col-12" type="date" name="calendrier">
-					<p>
-						<input class="1" type="checkbox" id="validation_cgv" name="validation_cgv" value="validation_cgv">
-						<label class="formulaire col-lg-11" style="font-style: italic;">Je déclare accepter les conditions générales de ventes</label>	
-					</p>
-				</form>
-			</div>
-		</article>
-		<article class="row">
-			<div class="marge_aeration ligne col-12 text-center"></div>
-			<div class="col-12 text-left">
-				<p>Produit : </p>
-				<p>Prix : </p>
-				<p>Livraison : </p>
-			</div>
-			<div class="marge_aeration ligne col-12 text-center"></div>
-			<button class="marge_aeration col-12 btn-rouge">Valider ma commande</button>
-		</article>
 	</section>
-<!-- PARTIE COMPLEMENTS D'INFORMATIONS-->
-	<section class="col-lg-4 col-12">
-<!-- PARTIE RECAPITULATIF COMMANDE-->
-		<article class="row marge_aeration">
-			<div class="col-12">
-				<h2>Mon panier <i class="fas fa-shopping-basket"></i></h2>
-				<div class="text-left">
+
+
+<!-- PARTIE DEVIS - INFORMATIONS - COMMANDE-->
+	<div class="row">
+		<section class="marge_aeration col-lg-8 col-12">	
+<!-- PARTIE DEVIS-->		
+			<article class="row marge_aeration"> 
+				<h2 class="css_h2 col-12">1. Devis</h2>
+				<form class="col-12" method="post" action="ma_base_de_donnee2.html">
+					<div class="row">
+						<label class="col-lg-6 col-12">Choisissez votre volume de fioul</label>
+						<input style="text-align: right;" class="formulaire col-lg-6 col-12" type="text" name="volume_fioul" placeholder="10 litres" value="litres">
+						<label class="col-lg-6 col-12">Choisissez votre qualité de fioul</label>
+						<select class="formulaire col-lg-6 col-12" name="qualite_fioul">
+							<option>Supérieur</option>
+							<option>Ordinaire</option>
+						</select>
+						<label class="col-lg-6 col-12">Choisissez votre jour de livraison</label>
+						<input class="formulaire col-lg-6 col-12" type="date" name="calendrier">
+						<label class="col-lg-6 col-12">Choisissez votre heure de livraison </label>
+							<select class="col-lg-6 col-12">
+								<optgroup label="Matin"></optgroup>
+									<option>7h00 - 8H00</option>
+									<option>8h00 - 9H00</option>
+									<option>9h00 - 10H00</option>
+									<option>10h00 - 11H00</option>
+									<option>11h00 - 12H00</option>
+								<optgroup label="Après-midi"></optgroup>
+									<option>14h00 - 15H00</option>
+									<option>15h00 - 16H00</option>
+									<option>16h00 - 17H00</option>
+									<option>17h00 - 18H00</option>
+									<option>18h00 - 19H00</option>
+									<option>19h00 - 20H00</option>
+							</select>
+						<p style="font-size: 0.8rem;" class="offset-lg-6 col-12">*sous réserve de la disponibilité du chauffeur</p>
+					</div>
+				</form>
+			</article>
+
+<!-- PARTIE INFORMATIONS-->
+			<article class="row marge_aeration">
+				<h2 class="css_h2 col-12">2. Informations</h2>
+				<form class="col-12" method="post" action="ma_base_de_donnee2.html">
+					<div class="row">
+						<label class="col-lg-3 col-12">Prénom</label>
+						<input class="formulaire col-lg-3 col-12" type="text" name="votre_prenom">
+						<label class="col-lg-3 col-12">Nom</label>
+						<input class="formulaire col-lg-3 col-12" type="text" name="votre_nom">
+						<label class="col-lg-3 col-12">Portable</label>
+						<input class="formulaire col-lg-3 col-12" type="number" name="numero_fixe">
+						<label class="formulaire col-lg-3 col-12">Fixe</label>
+						<input class="formulaire col-lg-3 col-12" type="number" name="numero_portable">
+						<label class="formulaire col-lg-3 col-12">Email :</label>
+						<input class="formulaire col-lg-3 col-12" type="email" name="email" placeholder="name@example.com" pattern=".+@.+.[a-z]{2,3}">
+	    				<label class="formulaire col-lg-3 col-6">Civilité</label>
+	    				<div class="sexe col-lg-3 col-6">
+	    					<input type="checkbox" id="civilite_homme" name="civilite_homme" value="civilite_homme">
+		    				<label class="formulaire">Homme</label>
+	    					<input type="checkbox" id="civilite_femme" name="civilite_femme" value="civilite_femme">
+	    					<label class="formulaire">Femme</label>
+	    				</div>
+	    				<label class="formulaire col-lg-3 col-12">Code Postal</label>
+						<input class="formulaire col-lg-3 col-12" type="number" name="code_postal" placeholder="75000" min="5" max="5">
+						<label class="formulaire col-lg-3 col-12">Ville</label>
+						<input class="formulaire col-lg-3 col-12" type="text" name="votre_ville">
+						<label class="formulaire col-lg-3 col-12">Adresse</label>
+						<textarea class="formulaire col-lg-3 col-12"></textarea>
+						<label class="formulaire col-lg-3 col-12">Commantaire personnel</label>
+						<textarea class="formulaire col-lg-3 col-12"></textarea>
+						<label class="formulaire col-lg-3 col-12">Société <span style="font-size: 0.8rem;">(facultatif)</span></label>
+						<input class="formulaire col-lg-3 col-12" type="text" name="votre_ville">
+	    				<div class="case_a_cocher col-1">
+	    					<input type="checkbox" id="adresse_facturation_differente" name="adresse_facturation_differente" value="adresse_facturation_differente">
+	    				</div>
+	    				<label class="formulaire col-lg-5 col-11" style="font-size: 0.8rem;">Mon adresse de facturation est différente de mon adresse de livraison</label>
+					</div>
+				</form>
+			</article>
+
+<!-- PARTIE COMMANDE-->
+			<article class="row marge_aeration">
+				<h2 class="css_h2 col-12">3. Commande</h2>
+				<form class="col-12" method="post" action="ma_base_de_donnee2.html">
+					<div class="row">
+						<label class="col-lg-6 col-12">Mode de paiement</label>
+						<select class="formulaire col-lg-6 col-12" name="qualite_fioul">
+							<option>Chèques</option>
+							<option>Espèces</option>
+							<option>Carte bancaire</option>
+							<option>Virement</option>
+						</select>
+						<label class="col-lg-6 col-12">Moment du paiement</label>
+						<input class="formulaire col-lg-6 col-12" type="date" name="calendrier">
+						<div class="case_a_cocher col-1">
+							<input type="checkbox" id="validation_cgv" name="validation_cgv" value="validation_cgv">
+						</div>
+						<label class="formulaire col-11" style="font-style: italic;">Je déclare accepter <a href="#">les conditions générales de ventes</a></label>	
+					</div>
+				</form>
+			</article>
+			<article class="row">
+				<div class="marge_aeration ligne col-12 text-center"></div>
+				<div class="col-12 text-left">
 					<p>Produit : </p>
 					<p>Prix : </p>
 					<p>Livraison : </p>
 				</div>
-			</div>
-		</article>
-<!-- PARTIE EVOLUTION PRIX-->
-		<article class="row marge_aeration">
-			<div class="col-12">
-				<h2>Evolution des prix 18 - 19  <i class="fas fa-sort-amount-up"></i></h2>
-				<figure id="image_evolution_prix">
-					<a href="images/evolution_prix_fioul.jpg"><img src="images/mini_evolution_prix_fioul.jpg" alt="evolution_prix_fioul"></a>
-					<figcaption class="col-12 d-flex align-items-baseline"><div class="ligne2 col-1"></div> <div class="col-5" style="text-align: left">Prix de Heaters R Us</div><div class="ligne3 col-1"></div><div class="col-5" style="text-align: left">Prix moyen national</div></figcaption>
-				</figure>
-			</div>
-		</article>
-<!-- PARTIE PROMO ET VENTES FLASH-->
-		<article class="row marge_aeration">
-			<div class="col-12">
-				<h2>Promotion et ventes flash <i class="fas fa-handshake"></i></h2>
-				<p>Pour être informer de nos futures promotions et ventes flash, inscrivez-vous à notre newletters en indiquant votre email ci-dessous : </p>
-				<form method="post" action="ma_base_de_donnee2.html">
-					<input class="formulaire col-12" type="email" name="email" placeholder="name@example.com" pattern=".+@.+.[a-z]{2,3}">
-				</form>
-			</div>
-		</article>
-<!-- PARTIE AVIS CLIENTS-->
-		<article class="row">
-			<div class="col-12">
-				<h2>Avis clients  <i class="far fa-comments"></i></h2>
-				<div class="contour_commentaire">
-					<i class="fas fa-star jaune"></i><i class="fas fa-star jaune"></i><i class="fas fa-star jaune"></i><i class="fas fa-star jaune"></i><i class="fas fa-star jaune"></i> Le 11/11/2019 <p><em>"Le produit est top, je recommande"</em></p>
-	        		<p class="position_p_left">Didier M.</p>
+				<div class="marge_aeration ligne col-12 text-center"></div>
+				<button class="marge_aeration col-12 btn-rouge">Valider ma commande</button>
+			</article>
+		</section>
+
+
+<!-- PARTIE COMPLEMENTS D'INFORMATIONS-->
+		<section class="col-lg-4">
+
+<!-- PARTIE RECAPITULATIF COMMANDE-->
+			<article class="row marge_aeration">
+				<div class="col-12">
+					<h2 class="css_h2">Mon panier <i class="fas fa-shopping-basket"></i></h2>
+					<div class="text-left">
+						<p>Produit : </p>
+						<p>Prix : </p>
+						<p>Livraison : </p>
+					</div>
 				</div>
-				<div class="contour_commentaire">	
-	        		<i class="fas fa-star jaune"></i><i class="fas fa-star jaune"></i><i class="fas fa-star jaune"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> Le 11/11/2019 <p><em>"Le produit est pas top, je recommande tout de même"</em></p>
-	        		<p class="position_p_left">Didier M.</p>
-	        	</div>
-			</div>
-		</article>
-	</section>
-</div>
+			</article>
+
+<!-- PARTIE EVOLUTION PRIX-->
+			<article class="row marge_aeration">
+				<div class="col-12">
+					<h2 class="css_h2">Evolution des prix 18 - 19  <i class="fas fa-sort-amount-up"></i></h2>
+					<figure id="image_evolution_prix">
+						<a href="images/evolution_prix_fioul.jpg"><img src="images/mini_evolution_prix_fioul.jpg" alt="evolution_prix_fioul"></a>
+						<figcaption class="col-12 d-flex align-items-baseline">
+							<div class="ligne2 col-1"></div> 
+							<div class="col-5" style="text-align: left">Prix de Heaters R Us</div>
+							<div class="ligne3 col-1"></div>
+							<div class="col-5" style="text-align: left">Prix moyen national</div>
+						</figcaption>
+					</figure>
+				</div>
+			</article>
+
+<!-- PARTIE PROMO ET VENTES FLASH-->
+			<article class="row marge_aeration">
+				<div class="col-12">
+					<h2 class="css_h2">Promotion et ventes flash <i class="fas fa-handshake"></i></h2>
+					<p>Pour être informer de nos futures promotions et ventes flash, inscrivez-vous à notre newletters en indiquant votre email ci-dessous : </p>
+					<form method="post" action="ma_base_de_donnee2.html">
+						<input class="formulaire col-12" type="email" name="email" placeholder="name@example.com" pattern=".+@.+.[a-z]{2,3}">
+					</form>
+				</div>
+			</article>
+		
+<!-- PARTIE AVIS CLIENTS-->
+			<article class="row">
+				<div class="col-12">
+					<h2 class="css_h2">Avis clients  <i class="far fa-comments"></i></h2>
+					<div class="contour_commentaire">
+						<i class="fas fa-star jaune"></i><i class="fas fa-star jaune"></i><i class="fas fa-star jaune"></i><i class="fas fa-star jaune"></i><i class="fas fa-star jaune"></i> Le 11/11/2019 <p><em>"Le produit est top, je recommande"</em></p>
+		        		<p class="position_p_left">Didier M.</p>
+					</div>
+					<div class="contour_commentaire">	
+		        		<i class="fas fa-star jaune"></i><i class="fas fa-star jaune"></i><i class="fas fa-star jaune"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> Le 11/11/2019 <p><em>"Le produit est pas top, je recommande tout de même"</em></p>
+		        		<p class="position_p_left">Didier M.</p>
+		        	</div>
+				</div>
+			</article>
+		</section>
+	</div>
 </div>
 
 

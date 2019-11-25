@@ -4,15 +4,40 @@ ______________________________________________________
 
 */
 body {
-	margin-top: 130px; /*Note à changer en fonction du header*/
+	margin-top: 145px; /*Note à changer en fonction du header*/
 }
 
 /*CCS du bandeau du Besoin d'appel*/
 #bandeau_appel p {
 	text-align: right;
 	font-size: 0.8em;
-	margin-top: 1rem;
+	margin-top: 0.5rem;
 	margin-bottom: 0rem;
+}
+
+#panier_achat p{
+	text-align: right;
+	font-size: 0.8em;
+	margin-top: 0rem;
+	margin-bottom: 0rem;
+	font-size: 1rem;
+}
+
+@keyframes rubberBand {
+    0%, 100% {
+        transform: scale3d(1, 1, 1);
+    }
+    30%,
+    60% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40%,
+    80% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
 }
 
 header {
@@ -45,16 +70,6 @@ header {
 	background-color: #fd1015;
 }
 
-/*Intégration du parallax*/
-/*.parallax {
-	width: 100%;
-	height: 400px;
-	background-image: url(salon_parallax.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top;
-	background-attachment: fixed;
-}*/
 
 /*CSS des FORMULAIRES D'ACHAT RAPIDE Fioul et Chaudière*/
 .commande {
@@ -418,6 +433,10 @@ ______________________________________________________
 	margin-top: 15px;
 }
 
+.btn-rouge:focus{
+	outline: none;	
+}
+
 
 /*CSS des parties DEVIS, INFORMATIONS et COMMANDE*/
 
@@ -487,10 +506,11 @@ div .panel {
 	color: white;
 	border: none;
 	border-radius: 10px;
+	padding-top: 10px;
 }
-#centrer {
-	width: 100%
-	height: 100px;
+.retour_haut_page:hover {
+	text-decoration: none;
+	color: white;
 }
 
 

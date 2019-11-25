@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>FAQ</title>
+	<title>INDEX</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -11,12 +11,16 @@
 	<!-- Mon style perso -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.css">
 </head>
 <body>
 <header class="fixed-top">
 	<div class="container">
 		<div id="bandeau_appel">
 			<p>Besoin d'aide ? <i class="fas fa-phone-alt"></i> : 01 69 98 99 11 (1 appel gratuit) de 10h à 18h.</p>
+		</div>
+		<div id="panier_achat">
+			<p>Votre panier <i class="fas fa-shopping-basket"></i></p>
 		</div>
 	<!-- Réalisation de la barre de navigation -->		
 		<div class="row">
@@ -32,22 +36,22 @@
 	       	 				<a class="nav-link" href="#index"><i class="fas fa-home"></i></a>
 	      				</li>
 	      				<li class="nav-item">
-	        				<a class="nav-link" href="#achatfioul">Achat de Fioul</a>
+	        				<a class="nav-link" href="#achat_fioul.html">Achat de Fioul</a>
 	      				</li>
 	      				<li class="nav-item dropdown">
-	        				<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Chaudière <span class="caret"></span></a>
+	        				<a class="nav-link dropdown-toggle" href="achat_chaudiere.html" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Chaudière <span class="caret"></span></a>
 	        				<div class="dropdown-menu" aria-labelledby="dropdown05">
-	          					<a class="dropdown-item" href="#achatchaudiere">Achat et entretien</a>
+	          					<a class="dropdown-item" href="#achat_chaudiere.html">Achat et entretien</a>
 	        				</div>
 	      				</li>
 	      				<li class="nav-item">
-	        				<a class="nav-link" href="#plomberie">Plomberie</a>
+	        				<a class="nav-link" href="#achat_plomberie.html">Plomberie</a>
 	      				</li>
 	      				<li class="nav-item">
-	        				<a class="nav-link" href="#societe">Société</a>
+	        				<a class="nav-link" href="#societe.html">Société</a>
 	      				</li>
 	      				<li class="nav-item">
-	        				<a class="nav-link" href="#contact">Contact</a>
+	        				<a class="nav-link" href="#contact.html">Contact</a>
 	      				</li>
 	    			</ul>
 	    			<form class="form-inline my-2 my-md-0">
@@ -58,6 +62,7 @@
 		</div>
 	</div>
 </header>
+
 <div class="container">
 	<section>
 		<div class="row mini_header">
@@ -78,7 +83,7 @@
 							<ul>
 								<li class="titre_faq">
 									<div class="accordion">Comment annuler une commande ?</div>
-									<div class="panel">Il est possible d’annuler une commande. Pour cela, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#">formulaire de contact</a> ou par e-mail à ladresse suivante : info@heatersrus.fr.</div>
+									<div class="panel">Il est possible d’annuler une commande. Pour cela, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#contact.html">formulaire de contact</a> ou par e-mail à l'adresse suivante : info@heatersrus.fr.</div>
 								</li> 
 								<li class="titre_faq">
 									<div class="accordion">A partir de combien de litres de fioul puis-je commander ?</div>
@@ -91,7 +96,7 @@
 								</li>
 								<li class="titre_faq">
 									<div class="accordion">Comment modifier mon adresse de livraison et/ou de facturation ?</div>
-									<div class="panel">Il est possible de modifier une adresse de livraison et de facturation et ce, même après la validation de la commande. Pour cela, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#">formulaire de contact</a> ou par e-mail à ladresse suivante : info@heatersrus.fr.</div>
+									<div class="panel">Il est possible de modifier une adresse de livraison et de facturation et ce, même après la validation de la commande. Pour cela, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#contact.html">formulaire de contact</a> ou par e-mail à l'adresse suivante : info@heatersrus.fr.</div>
 								</li>
 								<li class="titre_faq">
 									<div class="accordion">Quand serais-je prélevé ?</div>
@@ -99,7 +104,7 @@
 								</li>
 								<li class="titre_faq">
 									<div class="accordion">Comment modifier/supprimer mon mandat de prélèvement ?</div>
-									<div class="panel"><p>Pour toute modification ou suppression de votre mandat de prélèvement, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#">formulaire de contact</a> ou par e-mail à ladresse suivante : info@heatersrus.fr.</p>
+									<div class="panel"><p>Pour toute modification ou suppression de votre mandat de prélèvement, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#contact.html">formulaire de contact</a> ou par e-mail à l'adresse suivante : info@heatersrus.fr.</p>
 									<p>Attention, si votre mandat de prélèvement est utilisé pour une commande en cours de livraison, la modification ou la suppression de ce dernier ne pourra s'effectuer qu'après le prélèvement du montant de la livraison sur le compte bancaire rattaché au mandat de prélèvement.</p></div>
 								</li>
 							</ul>
@@ -111,7 +116,7 @@
 							<ul>
 								<li class="titre_faq">
 									<div class="accordion">Comment annuler une commande ?</div>
-									<div class="panel">Il est possible d’annuler une commande. Pour cela, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#">formulaire de contact</a> ou par e-mail à ladresse suivante : info@heatersrus.fr.</div>
+									<div class="panel">Il est possible d’annuler une commande. Pour cela, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#contact.html">formulaire de contact</a> ou par e-mail à l'adresse suivante : info@heatersrus.fr.</div>
 								</li>
 								<li class="titre_faq">
 									<div class="accordion">A partir de combien de litres puis-je commander ?</div>
@@ -140,12 +145,12 @@
 									<div class="panel"><p>Afin de vous assurer que votre commande a bien été prise en compte, voici les différentes étapes de vérification :</p>
 									<p>Une fois votre commande effectuée, vous serez redirigé sur l’étape 4 de notre site internet qui vous indiquera que votre paiement est validé.
 									Consultez votre adresse e-mail, une confirmation de commande vous est automatiquement envoyée. (Attention, cet e-mail peut être considéré comme un spam par votre boîte e-mail. Nous vous invitons donc à vérifier si cet e-mail de confirmation n’est pas dans vos « courriers indésirables » ou « spams »).</p> 
-									<p>Si vous avez des questions, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#">formulaire de contact</a> ou par e-mail à ladresse suivante : info@heatersrus.fr.</p></div>
+									<p>Si vous avez des questions, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#contact.html">formulaire de contact</a> ou par e-mail à l'adresse suivante : info@heatersrus.fr.</p></div>
 								</li>
 								<li class="titre_faq">
 									<div class="accordion">Comment suivre ma commande ?</div>
 									<div class="panel"><p>Une fois votre commande validée, vous recevez un e-mail de confirmation ainsi qu’un SMS la veille de la livraison vous indiquant la prise en charge de votre commande par notre équipe. Les livraisons s’effectuent du lundi au vendredi entre 7h et 20h en fonction de la demi-journée de votre choix.</p>
-									<p>Si vous avez des questions, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#">formulaire de contact</a> ou par e-mail à ladresse suivante : info@heatersrus.fr.</p></div>
+									<p>Si vous avez des questions, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#contact.html">formulaire de contact</a> ou par e-mail à l'adresse suivante : info@heatersrus.fr.</p></div>
 								</li>
 							</ul>
 						</div>	
@@ -156,7 +161,7 @@
 							<ul>
 								<li class="titre_faq">
 									<div class="accordion">Comment changer/modifier mon adresse de livraison ?</div>
-									<div class="panel">Il est possible de modifier une adresse de livraison et de facturation et ce, même après la validation de la commande. Pour cela, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#">formulaire de contact</a> ou par e-mail à ladresse suivante : info@heatersrus.fr.</div>
+									<div class="panel">Il est possible de modifier une adresse de livraison et de facturation et ce, même après la validation de la commande. Pour cela, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#contact.html">formulaire de contact</a> ou par e-mail à l'adresse suivante : info@heatersrus.fr.</div>
 								</li>
 								<li class="titre_faq">
 									<div class="accordion">Quels sont les pays désservis pour Herters R Us ?</div>
@@ -197,11 +202,11 @@
 								</li>
 								<li class="titre_faq">
 									<div class="accordion">Pourquoi n'ai-je pas été livré ?</div>
-									<div class="panel">Tout d’abord, vérifiez sur votre mail de confirmation le délai de livraison. Si la date de livraison ne correspond pas au délai de livraison choisi (créneau précis de livraison, livraison express 2 jours ou livraison standard 5 jours), vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#">formulaire de contact</a> ou par e-mail à ladresse suivante : info@heatersrus.fr.</div>
+									<div class="panel">Tout d’abord, vérifiez sur votre mail de confirmation le délai de livraison. Si la date de livraison ne correspond pas au délai de livraison choisi (créneau précis de livraison, livraison express 2 jours ou livraison standard 5 jours), vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#contact.html">formulaire de contact</a> ou par e-mail à l'adresse suivante : info@heatersrus.fr.</div>
 								</li>
 								<li class="titre_faq">
 									<div class="accordion">Qui effectue ma livraison ?</div>
-									<div class="panel">Heaters R Us est un service proposé par TOTAL, vous serez donc livré depuis l’un de nos 350 dépôts. Heaters R Us dispose d’un réseau important de partenaires distributeurs professionnels et qualifiés avec une flotte de 1200 camions, et ce dans toute la France. Pour toute réclamation, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#">formulaire de contact</a> ou par e-mail à ladresse suivante : info@heatersrus.fr</div>
+									<div class="panel">Heaters R Us est un service proposé par TOTAL, vous serez donc livré depuis l’un de nos 350 dépôts. Heaters R Us dispose d’un réseau important de partenaires distributeurs professionnels et qualifiés avec une flotte de 1200 camions, et ce dans toute la France. Pour toute réclamation, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#contact.html">formulaire de contact</a> ou par e-mail à l'adresse suivante : info@heatersrus.fr</div>
 								</li>
 							</ul>
 						</div>	
@@ -255,7 +260,7 @@
 								</li>
 								<li class="titre_faq">
 									<div class="accordion">Comment supprimer/modiffier mon mandat de prélèvement ?</div>
-									<div class="panel"><p>Pour toute modification ou suppression de votre mandat de prélèvement, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#">formulaire de contact</a> ou par e-mail à ladresse suivante : info@heatersrus.fr.</p>
+									<div class="panel"><p>Pour toute modification ou suppression de votre mandat de prélèvement, vous pouvez nous contacter au 01 34 25 81 56 (prix de l’appel)ou grâce au <a href="#contact.html">formulaire de contact</a> ou par e-mail à l'adresse suivante : info@heatersrus.fr.</p>
 									<p>Attention, si votre mandat de prélèvement est utilisé pour une commande en cours de livraison, la modification ou la suppression de ce dernier ne pourra s'effectuer qu'après le prélèvement du montant de la livraison sur le compte bancaire rattaché au mandat de prélèvement.</p></div>
 								</li>
 							</ul>
@@ -315,10 +320,13 @@
 		</div>
 	</section>
 	<div class="row marge_aeration">
-		<button class="retour_haut_page offset-2 col-8 offset-2 text-center"><i class="fas fa-angle-double-up"></i> Retour en haut de la page <i class="fas fa-angle-double-up"></i></button>
+		<a href="#" class="retour_haut_page offset-2 col-8 offset-2 text-center">
+			<i class="fas fa-angle-double-up"></i> Retour en haut de la page <i class="fas fa-angle-double-up"></i>
+		</a>
 	</div>
 </div>
-<!-- Footer -->
+
+<!-- FOOTER -->
 <footer>
 	<div class="container">
     	<div class="row">
@@ -353,7 +361,7 @@
 									</p>
 									<div class="form-check">
   										<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  										<label class="form-check-label" for="defaultCheck1">Cocher pour valider les CGU.<span class="lecture_cgu">Pour lire les CGU, <a href="#">cliquez ici.</a></span></label>
+  										<label class="form-check-label" for="defaultCheck1">Cocher pour valider les CGV.<span class="lecture_cgu">Pour lire les CGV, <a href="#">cliquez ici.</a></span></label>
 									</div>
 								</form>
  							</div> 
@@ -366,12 +374,12 @@
  				</div>
       		</div>
       		<div class="col-lg-3 d-none d-lg-block">
-		        <p><a href="#">Commment ça marche ?</a></p>
-		        <p><a href="#!">Besoin d'aide ?</a></p>
-		        <p><a href="#!">Demande de devis ?</a></p>
+		        <p><a href="comment_ca_marche.html">Commment ça marche ?</a></p>
+		        <p><a href="faq.html">Besoin d'aide ?</a></p>
+		        <p><a href="achat_fioul.html">Demande de devis ?</a></p>
 	    	</div>
 	      	<div class="col-lg-3 d-none d-lg-block">
-		        <p><a href="#!">Actualités</a></p>
+		        <p><a href="actualité_blog.html">Actualités</a></p>
  <!-- Button trigger modal --> 
  				<p><a href="#!" data-toggle="modal" data-target="#prendre_rdv">Prendre RDV</a></p>
 <!-- Modal --> 
@@ -392,7 +400,7 @@
 									</p>
 									<p>
 									<label>Votre disponibilité :</label>
-									<input class="col-12" type="date" name="calendrier" >	
+									<input class="datepick col-12" type="text" name="calendrier">
 									</p>
 									<p>
 									<label>Choisissez votre créneau horaire :</label>
@@ -421,7 +429,82 @@
 									</p>
 									<div class="form-check">
   										<input class="form-check-input" type="checkbox" value="" id="defaultCheck">
-  										<label class="form-check-label" for="defaultCheck">Cocher pour valider les CGU.<span class="lecture_cgu"> (Pour lire les CGU, <a href="#">cliquez ici.)</a></span></label>
+  										<label class="form-check-label" for="defaultCheck">Cocher pour valider les CGV.<span class="lecture_cgu"> (Pour lire les CGV, <a href="#">cliquez ici.)</a></span></label>
+									</div>
+								</form>
+ 							</div> 
+ 							<div class="modal-footer" > 
+ 								<button type="button" class="btn btn-secondary" data-dismiss="modal" > Fermer </button> 
+ 								<button type="button" class="btn btn-primary" > Envoyer </button> 
+ 							</div> 
+ 						</div> 
+ 					</div> 
+ 				</div> 
+			    <p><a href="contact.html">Contactez-Nous</a></p>
+	       	</div>
+<!-- Mise en place de l'accordeon du footer-->
+      		<p class="accordion col-12 d-lg-none">En savoir plus
+      			<button class="offset-md-9 offset-8">
+      				<i class="fas fa-angle-double-down"></i>
+      			</button>
+      		</p>
+	      		<div class="panel">
+		      		<div class="col-12 d-lg-none">
+				        <p><a href="comment_ca_marche.html">Commment ça marche ?</a></p>
+				        <p><a href="faq.html">Besoin d'aide ?</a></p>
+				        <p><a href="achat_fioul.html">Demande de devis ?</a></p>
+			    	</div>
+			      	<div class="col-12 d-lg-none">
+				        <p><a href="blog.html">Actualités</a></p>
+				        <p><a href="#!" data-toggle="modal" data-target="#prendre_rdv2">Prendre RDV</a></p>
+<!-- Modal --> 
+ 						<div class="modal fade" id="prendre_rdv2" tabindex="-1" role="dialog" aria-labelledby="prendre_rdv3" aria-hidden="true" > 
+ 							<div class="modal-dialog" role="document" > 
+ 							<div class="modal-content" > 
+ 								<div class="modal-header" > 
+ 									<h5 class="modal-title" id="prendre_rdv3" > Prendre un rendez-vous </h5> 
+ 									<button type="button" class="close" data-dismiss="modal" aria-label="Close" > 
+ 										<span aria-hidden="true" > &times; </span> 
+ 									</button> 
+ 								</div> 
+ 							<div class="modal-body" >
+ 								<form method="post" action="ma_base_de_donnee.html">
+ 									<p>
+ 									<label>Email :</label>
+									<input class="col-12" type="email" name="email" placeholder="name@example.com" pattern=".+@.+.[a-z]{2,3}">	
+									</p>
+									<p>
+									<label>Votre disponibilité :</label>
+									<input class="datepick col-12" type="text" name="calendrier">
+									</p>
+									<p>
+									<label>Choisissez votre créneau horaire :</label>
+									<select class="col-12">
+										<optgroup label="Matin"></optgroup>
+										<option>10h00 - 10h30</option>
+										<option>10h30 - 11h00</option>
+										<option>11h00 - 11h30</option>
+										<option>11h30 - 12H00</option>
+										<option>12h00 - 12h30</option>
+										<optgroup label="Après-midi"></optgroup>
+										<option>14h00 - 14h30</option>
+										<option>14h30 - 15H00</option>
+										<option>15h00 - 15h30</option>
+										<option>15h30 - 16H00</option>
+										<option>16h00 - 16h30</option>
+									</select>	
+									</p>
+									<p>
+										<label>Informations sur votre demande :</label>
+										<textarea class="col-12"></textarea>
+									</p>
+									<p>
+										<label for="exampleFormControlFile1">Télécharger votre pièce jointe :</label>
+    									<input type="file" class="form-control-file" id="exampleFormControlFile1">
+									</p>
+									<div class="form-check">
+  										<input class="form-check-input" type="checkbox" value="" id="defaultCheck">
+  										<label class="form-check-label" for="defaultCheck">Cocher pour valider les CGV.<span class="lecture_cgu"> (Pour lire les CGV, <a href="cgv.html">cliquez ici.)</a></span></label>
 									</div>
 								</form>
  							</div> 
@@ -432,24 +515,7 @@
  						</div> 
  					</div> 
  				</div>
-			    <p><a href="#!">Contactez-Nous</a></p>
-	       	</div>
-<!-- Mise en place de l'accordeon du footer-->
-      		<p class="accordion col-12 d-lg-none">En savoir plus
-      			<button class="offset-md-9 offset-8">
-      				<i class="fas fa-angle-double-down"></i>
-      			</button>
-      		</p>
-	      		<div class="panel">
-		      		<div class="col-lg-3 col-12">
-				        <p><a href="#">Commment ça marche ?</a></p>
-				        <p><a href="#!">Besoin d'aide ?</a></p>
-				        <p><a href="#!">Demande de devis ?</a></p>
-			    	</div>
-			      	<div class="col-lg-3 col-12">
-				        <p><a href="#!">Actualités</a></p>
-				        <p><a href="#!">Prendre RDV</a></p>
-				        <p><a href="#!">Contactez-Nous</a></p>
+				        <p><a href="contact.html">Contactez-Nous</a></p>
 			       	</div>
 			    </div>   	
 		   	</div>
@@ -459,10 +525,10 @@
 	<div class="container">
 	   	<div id="footer-font">
 			<div class="row text-center">
-				<div class="col-3"><a href="#"> Conditions générales de vente </a></div>
-				<div class="col-3"><a href="#">Mention légales </a></div>
-				<div class="col-3"><a href="#">Données Personnelles </a></div>
-				<div class="col-3"><a href="#">RGPD </a></div>
+				<div class="col-3"><a href="cgv.html"> Conditions générales de vente </a></div>
+				<div class="col-3"><a href="mentions_legales.html">Mention légales </a></div>
+				<div class="col-3"><a href="donnees_personnelles.html">Données Personnelles </a></div>
+				<div class="col-3"><a href="cookies.html">Cookies </a></div>
 				<div class="col-12 mt-4 mb-4">© 2019 Copyright - Carvil Wendell Phillips & Johann Chaligné</div>
 			   </div>
 		</div>
@@ -471,35 +537,8 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js" ></script>
-<script>
-/*Animation de l'accordeon du footer*/
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
- 	acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    	this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    	var panel = this.nextElementSibling;
-    	if (panel.style.display === "block") {
-      		panel.style.display = "none";
-    	} 
-    	else {
-      		panel.style.display = "block";
-    	}
-  	});
-}
-
-/*Animation des Modales*/
- $('#myModal').on('shown.bs.modal',function(){
- 	$('#myInput').trigger('focus')
- }) 
-
-
-
-</script>
+<script src="js/evenements.js" type="text/javascript"></script>
+<script src="js/jquery-ui/external/jquery/jquery.js"></script>
+<script src="js/jquery-ui/jquery-ui.js" type="text/javascript"></script>
 </body>
 </html>

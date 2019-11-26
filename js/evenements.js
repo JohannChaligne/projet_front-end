@@ -30,26 +30,6 @@ votrePanier.addEventListener('mouseout', animationPanier2);
 votrePanier.addEventListener('click', animationPanier3);
 
 
-// Selection de l'élément "Bouton de validation de la page "achat_fioul.html"
-var validation_Bouton = document.querySelectorAll('button')[1];
-
-// Déclaration des fonctions
-function ajoutPanier(){
-  votrePanier.innerHTML = "Votre panier <i class=\"fas fa-shopping-basket\"></i> (1) "; 
-}
-
-//Evenements sur le panier du header
-validation_Bouton.addEventListener('click', ajoutPanier);
-
-
-//Mise en place du prompt de validation du devis
-var validation_Bouton = document.querySelectorAll('button')[1];
-function confirmationPanier(){
-  alert('Votre commande a bien été réceptionné par nos services. Pour toutes informations, n\'hésitez pas à nous contacter au 01 34 25 81 56 (prix de l’appel) par la section contact ou par e-mail à l\'adresse suivante : info@heatersrus.fr'); 
-}
-validation_Bouton.addEventListener('click', confirmationPanier);
-
-
 /*Animation de l'accordeon*/
 var acc = document.getElementsByClassName("accordion");
 var i;

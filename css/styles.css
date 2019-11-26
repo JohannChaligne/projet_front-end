@@ -169,7 +169,10 @@ div .phase2 {
 	height: 125px;
 	margin: auto;
 	margin-top: 10px;
-	overflow: hidden;
+}
+
+.etape_societe a:hover, .etape_societe2 a:hover {
+	color: red;
 }
 
 .etape_societe img{
@@ -281,8 +284,10 @@ div .phase3 {
 
 .etape_actualite {
 	height: 125px;
-	margin: auto;
+	margin: 0 auto;
+	margin-top: 5px;
 	overflow: hidden;
+	box-shadow: 10px 5px 5px grey;
 }
 
 .etape_actualite a{
@@ -292,6 +297,10 @@ div .phase3 {
 
 .etape_actualite p {
  	font-size: 0.8rem;
+}
+
+.etape_actualite span {
+ 	font-style: italic;
 }
 
 .etape_actualite a:hover{
@@ -318,7 +327,7 @@ div .phase3 {
 .etape_produit_service p{
 	font-size: 0.8rem;
 	color: white;
-	background-color: rgba(253, 16,21,0.7);
+	background-color: rgba(253, 16,21,1);
 	border-radius: 10px;
 	text-align: center;
 	margin-bottom: 5px;
@@ -474,7 +483,7 @@ ______________________________________________________
 
 
 /*______________________________________________________
-_________________FOIRE AUX QUESTIONS___________________
+_________________FOIRE AUX QUESTIONS (FAQ)_____________
 _______________________________________________________
 
 */
@@ -626,6 +635,407 @@ _______________________________________________________
 .test2_hover:hover {
 	color: #fd1015;
 }
+
+.marge_interne {
+	padding: 15px;
+}
+
+
+
+/*......................Cards...................*/
+
+/*.........Favorite Button Animation............*/
+
+
+
+
+.heart{
+
+	color: #f44336;
+	font-size: 30px;
+	
+	border: .5px solid lightgrey;
+	border-radius: 5px;
+	
+}
+
+.heart-grey{  
+	color: grey;
+	font-size: 30px;
+	
+	border: .5px solid lightgrey;
+	border-radius: 5px;
+	}
+
+
+
+.text-btn-card{
+font-size: 15px
+
+
+}
+
+/* stars     */
+
+
+.rating{
+
+	color:#eec730;
+	display:flex;
+	padding:.5em;
+
+}
+
+
+.rating-filter:hover{
+color:#fff;
+}
+
+.text-avis{
+
+	font-size: 15px;
+	color:grey;
+	margin: 0;
+
+}
+
+
+/*................. page societe...............*/
+
+/*header*/
+
+
+
+.titre_page {
+	background-color: rgba(253,16,21,0.9);
+	color: white;
+}
+
+.banner{
+	height: 500px;
+	text-align: center;
+	background-size: cover;
+}
+
+.banner-societe{background: url('../images/header-about-us.jpg') center center transparent no-repeat;}
+.banner-contact{background: url('../images/contact-2.jpeg') center center transparent no-repeat;}
+.banner-actu{background: url('../images/actu.jpeg') center center transparent no-repeat;}
+.banner-art-1{background: url('../images/article-1.jpeg') center center transparent no-repeat;}
+.banner-art-2{background: url('../images/article-2.jpeg') center center transparent no-repeat;}
+.banner-art-3{background: url('../images/article-3.jpeg') center center transparent no-repeat;}
+.banner-art-4{background: url('../images/article-4.jpeg') center center transparent no-repeat;}
+.banner-art-5{background: url('../images/article-5.jpeg') center center transparent no-repeat;}
+.banner-art-6{background: url('../images/article-6.jpeg') center center transparent no-repeat;}
+.banner-art-7{background: url('../images/article-7.jpeg') center center transparent no-repeat;}
+.banner-art-8{background: url('../images/article-8.jpeg') center center transparent no-repeat;}
+.banner-art-9{background: url('../images/article-9.jpeg') center center transparent no-repeat;}
+.banner-art-10{background: url('../images/article-10.jpeg') center center transparent no-repeat;}
+.banner-art-11{background: url('../images/article-11.jpeg') center center transparent no-repeat;}
+.banner-art-12{background: url('../images/article-12.jpeg') center center transparent no-repeat;}
+
+
+/*Cartes*/
+
+
+
+.card-shadow{
+	box-shadow: 10px 5px 5px grey;
+}
+
+
+
+
+.carte{
+
+	margin: 25px 0;
+	padding: 25px 0;
+	align-items: center;
+	text-align: center;
+
+
+}
+
+.carte-societe{
+	box-shadow: 10px 5px 5px grey;
+}
+
+@media screen and (max-width: 768px) {
+    .carte-societe {
+        box-shadow: none;
+    }
+}
+
+
+
+
+.icon{
+
+	color:#fd1015;
+}
+
+
+/*.........Contact Form........*/
+
+.Formulaire{
+
+	max-width: 1140px;
+	padding-right: 15px;
+   	padding-left: 15px;
+   	margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 5px;
+
+
+}
+
+
+.form-head{
+	color: #fff;
+	background: #fd1015;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+.texte_gras {
+
+font-weight: bold;
+
+}
+
+.contact{background: url('../images/contact-1.jpeg') center center transparent no-repeat;}
+
+/*....................Filtre..........................*/
+
+
+
+
+
+
+/*.........Button Rotate...........*/
+
+
+.rotate {
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.rotate.down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+
+/*.....Filtre css.......*/
+
+
+.filtre{
+
+ font-size: 10px;
+ background: #fff;
+
+
+}
+
+.filtre-head{
+
+font-size: 20px;
+color: #fd1015;
+font-weight: bold;
+}
+
+
+.accordion{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid lightgrey;
+  transition: 0.4s;
+  margin-top: 10px;
+}
+
+.accordion button {
+	background-color: white;
+    border: none;
+}
+
+
+.accordion h4{
+font-size: 90px;
+
+
+} 
+
+
+
+
+/* Accordion addition trial */
+
+
+.panel{
+		padding: 0 18px;
+    	background-color: white;
+    	display: none;
+    	overflow: hidden;
+    	border: none;
+	}
+.panel button{
+		
+    	border: none;
+	}
+
+
+
+.titre_filtre, .btn-filtre .accordion{
+
+	background-color: #F5F5F5;
+}
+
+.titre_filtre:hover, .btn-filtre .accordion:hover {
+	background-color: #fd1015;
+	color: white;
+}
+
+div .panel button {
+	text-align: justify;
+	padding: 5px;
+	color: black;
+}
+
+div .filter:hover {
+	color: white;
+	background-color: #fd1015;
+}
+
+
+/* End accordian*/
+
+
+/* Article*/
+
+.article{
+
+background-color: #fff;
+margin: 0 auto; 
+
+
+}
+
+.article > p{
+
+background-color: #fff;
+margin: 0 auto; 
+
+
+
+}
+
+.article-title{
+
+	background: #fff;
+	color:#000;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+.article-shadow{
+	box-shadow: 5px 5px 5px 5px grey;
+}
+
+.sous-titre-art{
+	
+	font-weight: bold;
+	color:#fd1015; 
+	font-size: 20px;
+
+}
+ .red:hover{
+ 	color:#fd1015; 
+
+ }
+
+ .link-style-none{
+ 	color:#212529;
+
+	text-decoration:none;	
+ }
+
+
+
+/*......... Bloooog.........    */
+
+.text-red{
+ color:#fff;
+
+}
+
+.text-red:hover{
+
+	color:#f44336;
+}
+
+
+
+.card-bg{
+	background-color: rgba(253,16,21,0.5);
+
+}
+
+.bg-red{
+	background-color:#f44336;
+}
+
+.bg-red:hover{
+	background-color:#fff;
+}
+
+
+
+
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

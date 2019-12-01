@@ -51,24 +51,4 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
-/*Animation des modals*/
- $('#myModal').on('shown.bs.modal',function(){
-  $('#myInput').trigger('focus')
- }) 
-
-/*Plugin du calendrier dans les modals*/
-    $(document).ready(function() {
-        $('.datepick').datepicker({ dateFormat: "yy-mm-dd"});
-    });
-
-
-
-
-
-//Selection de l'élement "input" dans l'article "Devis" pour automatiser l'insertion
-
-
-
-
-
 
